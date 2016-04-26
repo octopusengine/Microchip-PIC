@@ -1,0 +1,399 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 12LF1840 ]
+[d frameptr 6 ]
+"31 C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c
+[v _ONE_ISR_FITS_ALL ONE_ISR_FITS_ALL `II(v  1 e 0 0 ]
+"36
+[v _SYS_IO_init SYS_IO_init `(v  1 e 0 0 ]
+"56
+[v _SYS_CLK_init SYS_CLK_init `(v  1 e 0 0 ]
+"62
+[v _I2C_processBuffers I2C_processBuffers `(v  1 e 0 0 ]
+"77
+[v _goPat16 goPat16 `(v  1 e 0 0 ]
+"88
+[v _main main `(i  1 e 2 0 ]
+"16 C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ADC.c
+[v _PIC12_ADC_read PIC12_ADC_read `(uc  1 e 1 0 ]
+"37
+[v _PIC12_ADC_init PIC12_ADC_init `(v  1 e 0 0 ]
+"3 C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ECCP.c
+[v _PIC12_ECCP_init PIC12_ECCP_init `(v  1 e 0 0 ]
+"7 C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c
+[v _PIC12_I2C_Slave_handler PIC12_I2C_Slave_handler `(v  1 e 0 0 ]
+"65
+[v _PIC12_I2C_Slave_init PIC12_I2C_Slave_init `(v  1 e 0 0 ]
+[v i1_PIC12_I2C_Slave_init PIC12_I2C_Slave_init `(v  1 e 0 0 ]
+"3 C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_TMR2.c
+[v _PIC12_TMR2_init PIC12_TMR2_init `(v  1 e 0 0 ]
+"3 C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_WDT.c
+[v _PIC12_WDT_init PIC12_WDT_init `(v  1 e 0 0 ]
+"8
+[v _PIC12_WDT_kick PIC12_WDT_kick `(v  1 e 0 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"33 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"42 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"18 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"48
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+"56
+[v ___eetoi __eetoi `(ui  1 e 2 0 ]
+"64
+[v ___eetom __eetom `(um  1 e 3 0 ]
+"72
+[v ___eetol __eetol `(ul  1 e 4 0 ]
+"80
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+"87
+[v ___itoee __itoee `(ui  1 e 2 0 ]
+"94
+[v ___mtoee __mtoee `(um  1 e 3 0 ]
+"101
+[v ___ltoee __ltoee `(ul  1 e 4 0 ]
+"108
+[v ___eetoft __eetoft `(f  1 e 3 0 ]
+"116
+[v ___eetofl __eetofl `(d  1 e 3 0 ]
+"124
+[v ___fttoee __fttoee `(f  1 e 3 0 ]
+"131
+[v ___fltoee __fltoee `(d  1 e 3 0 ]
+"49 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"28 C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c
+[v _STAV STAV `i  1 e 2 0 ]
+"76
+[v _pat16 pat16 `i  1 e 2 0 ]
+"7 C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ADC.c
+[v _PIC12_ADC_channelData PIC12_ADC_channelData `VE[4]uc  1 e 4 0 ]
+"4 C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c
+[v _SSP_bufIndex SSP_bufIndex `uc  1 e 1 0 ]
+"5
+[v _SSPBuffer SSPBuffer `[16]uc  1 e 16 0 ]
+"412 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic12lf1840.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"790
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+[s S121 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+"830
+[s S129 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+[u S133 . 1 `S121 1 . 1 0 `S129 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES133  1 e 1 @28 ]
+"971
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+[s S155 . 1 `uc 1 SWDTEN 1 0 :1:0 
+`uc 1 WDTPS0 1 0 :1:1 
+`uc 1 WDTPS1 1 0 :1:2 
+`uc 1 WDTPS2 1 0 :1:3 
+`uc 1 WDTPS3 1 0 :1:4 
+`uc 1 WDTPS4 1 0 :1:5 
+]
+"1271
+[s S162 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 WDTPS 1 0 :5:1 
+]
+[u S165 . 1 `S155 1 . 1 0 `S162 1 . 1 0 ]
+[v _WDTCONbits WDTCONbits `VES165  1 e 1 @151 ]
+[s S197 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF0 1 0 :1:3 
+`uc 1 IRCF1 1 0 :1:4 
+`uc 1 IRCF2 1 0 :1:5 
+`uc 1 IRCF3 1 0 :1:6 
+`uc 1 SPLLEN 1 0 :1:7 
+]
+"1389
+[s S206 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF 1 0 :4:3 
+]
+[u S210 . 1 `S197 1 . 1 0 `S206 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES210  1 e 1 @153 ]
+"1524
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1543
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+"1622
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"2339
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2385
+[v _EEADR EEADR `VEus  1 e 2 @401 ]
+"2440
+[v _EEDATA EEDATA `VEuc  1 e 1 @403 ]
+"2491
+[v _EECON1 EECON1 `VEuc  1 e 1 @405 ]
+"2552
+[v _EECON2 EECON2 `VEuc  1 e 1 @406 ]
+"2935
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
+"2972
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @530 ]
+"3009
+[v _SSP1MSK SSP1MSK `VEuc  1 e 1 @531 ]
+"3046
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @532 ]
+[s S67 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"3068
+[u S76 . 1 `S67 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES76  1 e 1 @532 ]
+"3167
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
+"3370
+[v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @534 ]
+"3491
+[v _SSP1CON3 SSP1CON3 `VEuc  1 e 1 @535 ]
+"3618
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @657 ]
+[s S29 . 1 `uc 1 CCP1M0 1 0 :1:0 
+`uc 1 CCP1M1 1 0 :1:1 
+`uc 1 CCP1M2 1 0 :1:2 
+`uc 1 CCP1M3 1 0 :1:3 
+`uc 1 DC1B0 1 0 :1:4 
+`uc 1 DC1B1 1 0 :1:5 
+`uc 1 P1M0 1 0 :1:6 
+`uc 1 P1M1 1 0 :1:7 
+]
+"3678
+[s S38 . 1 `uc 1 CCP1M 1 0 :4:0 
+`uc 1 DC1B 1 0 :2:4 
+`uc 1 P1M 1 0 :2:6 
+]
+[u S42 . 1 `S29 1 . 1 0 `S38 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES42  1 e 1 @659 ]
+"4711
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @4278 ]
+"4729
+[v _ADGO ADGO `VEb  1 e 0 @1257 ]
+"4733
+[v _ADIF ADIF `VEb  1 e 0 @142 ]
+"4735
+[v _ADON ADON `VEb  1 e 0 @1256 ]
+"4745
+[v _ANSA1 ANSA1 `VEb  1 e 0 @3169 ]
+"4747
+[v _ANSA2 ANSA2 `VEb  1 e 0 @3170 ]
+"4749
+[v _ANSA4 ANSA4 `VEb  1 e 0 @3172 ]
+"4807
+[v _CARRY CARRY `VEb  1 e 0 @24 ]
+"4829
+[v _CCP1SEL CCP1SEL `VEb  1 e 0 @2280 ]
+"4849
+[v _CKP CKP `VEb  1 e 0 @4268 ]
+"4917
+[v _D_nA D_nA `VEb  1 e 0 @4261 ]
+"4935
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"5009
+[v _LATA5 LATA5 `VEb  1 e 0 @2149 ]
+"5101
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"5143
+[v _RD RD `VEb  1 e 0 @3240 ]
+"5153
+[v _R_nW R_nW `VEb  1 e 0 @4258 ]
+"5215
+[v _SSP1IE SSP1IE `VEb  1 e 0 @1163 ]
+"5217
+[v _SSP1IF SSP1IF `VEb  1 e 0 @139 ]
+"5229
+[v _SSPOV SSPOV `VEb  1 e 0 @4270 ]
+"5243
+[v _SWDTEN SWDTEN `VEb  1 e 0 @1208 ]
+"5323
+[v _TMR2ON TMR2ON `VEb  1 e 0 @226 ]
+"5327
+[v _TRISA1 TRISA1 `VEb  1 e 0 @1121 ]
+"5329
+[v _TRISA2 TRISA2 `VEb  1 e 0 @1122 ]
+"5335
+[v _TRISA5 TRISA5 `VEb  1 e 0 @1125 ]
+"5369
+[v _WCOL WCOL `VEb  1 e 0 @4271 ]
+"5383
+[v _WPUA1 WPUA1 `VEb  1 e 0 @4193 ]
+"5385
+[v _WPUA2 WPUA2 `VEb  1 e 0 @4194 ]
+"5393
+[v _WR WR `VEb  1 e 0 @3241 ]
+"5395
+[v _WREN WREN `VEb  1 e 0 @3242 ]
+"5419
+[v _nWPUEN nWPUEN `VEb  1 e 0 @1199 ]
+"88 C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"111
+[v main@blik blik `i  1 a 2 7 ]
+"166
+} 0
+"77
+[v _goPat16 goPat16 `(v  1 e 0 0 ]
+{
+"79
+[v goPat16@i i `i  1 a 2 5 ]
+"77
+[v goPat16@byte8 byte8 `i  1 p 2 3 ]
+"86
+} 0
+"36
+[v _SYS_IO_init SYS_IO_init `(v  1 e 0 0 ]
+{
+"54
+} 0
+"56
+[v _SYS_CLK_init SYS_CLK_init `(v  1 e 0 0 ]
+{
+"59
+} 0
+"3 C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_WDT.c
+[v _PIC12_WDT_init PIC12_WDT_init `(v  1 e 0 0 ]
+{
+"6
+} 0
+"3 C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_TMR2.c
+[v _PIC12_TMR2_init PIC12_TMR2_init `(v  1 e 0 0 ]
+{
+"10
+} 0
+"65 C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c
+[v _PIC12_I2C_Slave_init PIC12_I2C_Slave_init `(v  1 e 0 0 ]
+{
+"75
+} 0
+"3 C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ECCP.c
+[v _PIC12_ECCP_init PIC12_ECCP_init `(v  1 e 0 0 ]
+{
+"8
+} 0
+"16 C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ADC.c
+[v _PIC12_ADC_read PIC12_ADC_read `(uc  1 e 1 0 ]
+{
+[v PIC12_ADC_read@chan chan `uc  1 a 1 wreg ]
+[v PIC12_ADC_read@chan chan `uc  1 a 1 wreg ]
+[v PIC12_ADC_read@chan chan `uc  1 a 1 5 ]
+"28
+} 0
+"37
+[v _PIC12_ADC_init PIC12_ADC_init `(v  1 e 0 0 ]
+{
+"40
+} 0
+"62 C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c
+[v _I2C_processBuffers I2C_processBuffers `(v  1 e 0 0 ]
+{
+"74
+} 0
+"31
+[v _ONE_ISR_FITS_ALL ONE_ISR_FITS_ALL `II(v  1 e 0 0 ]
+{
+"34
+} 0
+"7 C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c
+[v _PIC12_I2C_Slave_handler PIC12_I2C_Slave_handler `(v  1 e 0 0 ]
+{
+"8
+[v PIC12_I2C_Slave_handler@BUF_temp BUF_temp `uc  1 a 1 1 ]
+"10
+[v PIC12_I2C_Slave_handler@byte_ptr byte_ptr `*.4uc  1 s 1 byte_ptr ]
+"11
+[v PIC12_I2C_Slave_handler@registerIndex registerIndex `uc  1 s 1 registerIndex ]
+"55
+} 0
+"65
+[v i1_PIC12_I2C_Slave_init PIC12_I2C_Slave_init `(v  1 e 0 0 ]
+{
+"75
+} 0

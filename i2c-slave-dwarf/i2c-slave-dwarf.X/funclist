@@ -1,0 +1,16 @@
+_PIC12_WDT_init: CODE, 874 0 7
+_ONE_ISR_FITS_ALL: CODE, 4 0 12
+_PIC12_I2C_Slave_init: CODE, 811 0 16
+_PIC12_TMR2_init: CODE, 857 0 9
+_main: CODE, 32 0 565
+_goPat16: CODE, 673 0 58
+i1_PIC12_I2C_Slave_init: CODE, 827 0 16
+_PIC12_I2C_Slave_handler: CODE, 597 0 76
+__initialization: CODE, 18 0 10
+_I2C_processBuffers: CODE, 731 0 30
+_SYS_IO_init: CODE, 788 0 23
+_PIC12_ADC_read: CODE, 761 0 27
+_PIC12_ADC_init: CODE, 887 0 4
+_PIC12_ECCP_init: CODE, 843 0 14
+_SYS_CLK_init: CODE, 866 0 8
+Total: 875

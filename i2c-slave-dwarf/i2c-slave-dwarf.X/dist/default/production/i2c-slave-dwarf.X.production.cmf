@@ -1,0 +1,779 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\home\AppData\Local\Temp\s48g.obj
+end_init CODE 0 10 10 2 2
+reset_vec CODE 0 0 0 2 2
+$dist/default/production\i2c-slave-dwarf.X.production.obj
+cinit CODE 0 12 12 E 2
+intentry CODE 0 4 4 C 2
+eeprom_data EEDATA 3 0 F000 8 2
+text13 CODE 0 33B 33B 10 2
+text12 CODE 0 255 255 4C 2
+text10 CODE 0 2DB 2DB 1E 2
+text9 CODE 0 377 377 4 2
+text8 CODE 0 2F9 2F9 1B 2
+text7 CODE 0 34B 34B E 2
+text6 CODE 0 32B 32B 10 2
+text5 CODE 0 359 359 9 2
+text4 CODE 0 36A 36A 7 2
+text3 CODE 0 362 362 8 2
+text2 CODE 0 314 314 17 2
+text1 CODE 0 2A1 2A1 3A 2
+maintext CODE 0 20 20 235 2
+cstackBANK0 BANK0 1 39 39 9 1
+cstackCOMMON COMMON 1 70 70 7 1
+clrtext CODE 0 371 371 6 2
+bssBANK0 BANK0 1 20 20 19 1
+bssCOMMON COMMON 1 77 77 3 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 00042-0006F 1
+BANK1 000A0-000EF 1
+BANK2 00120-0016F 1
+BIGRAM 02000-020EF 1
+CODE 00002-00003 2
+CODE 0037B-00FFF 2
+COMMON 0007A-0007D 1
+CONFIG 08007-08008 2
+CONST 00002-00003 2
+CONST 0037B-00FFF 2
+EEDATA 0F008-0F0FF 2
+ENTRY 00002-00003 2
+ENTRY 0037B-00FFF 2
+IDLOC 08000-08003 2
+RAM 00042-0006F 1
+RAM 000A0-000EF 1
+RAM 00120-0016F 1
+SFR0 00000-0001F 1
+SFR1 00080-0009F 1
+SFR10 00500-0056F 1
+SFR11 00580-005EF 1
+SFR12 00600-0066F 1
+SFR13 00680-006EF 1
+SFR14 00700-0076F 1
+SFR15 00780-007EF 1
+SFR16 00800-0086F 1
+SFR17 00880-008EF 1
+SFR18 00900-0096F 1
+SFR19 00980-009EF 1
+SFR2 00100-0011F 1
+SFR20 00A00-00A6F 1
+SFR21 00A80-00AEF 1
+SFR22 00B00-00B6F 1
+SFR23 00B80-00BEF 1
+SFR24 00C00-00C6F 1
+SFR25 00C80-00CEF 1
+SFR26 00D00-00D6F 1
+SFR27 00D80-00DEF 1
+SFR28 00E00-00E6F 1
+SFR29 00E80-00EEF 1
+SFR3 00180-001EF 1
+SFR30 00F00-00F6F 1
+SFR31 00F80-00FEF 1
+SFR4 00200-0026F 1
+SFR5 00280-002EF 1
+SFR6 00300-0036F 1
+SFR7 00380-003EF 1
+SFR8 00400-0046F 1
+SFR9 00480-004EF 1
+STACK 02022-020EF 1
+STRCODE 00002-00003 2
+STRCODE 0037B-00FFF 2
+STRING 00002-00003 2
+STRING 0037B-00FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\i2c-slave-dwarf.X.production.obj
+"C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic12lf1840.h":3618 0 text0 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":31 4 intentry CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":33 9 intentry CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":34 B intentry CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1591 12 cinit CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1594 12 cinit CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1641 12 cinit CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1642 13 cinit CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1643 14 cinit CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1647 15 cinit CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1648 16 cinit CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1649 17 cinit CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1650 18 cinit CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1651 19 cinit CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1652 1A cinit CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1658 1C cinit CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1659 1C cinit CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1660 1D cinit CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1661 1E cinit CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":88 20 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":89 20 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":90 23 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":91 26 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":92 29 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":93 2C maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":94 2F maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":95 32 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":96 35 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":97 36 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":99 37 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":100 39 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":101 3D maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":103 43 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":104 52 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":105 63 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":106 74 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":107 85 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":108 96 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":111 A7 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":112 B4 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":113 B4 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":114 B6 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":115 C2 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":116 C7 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":111 D3 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":121 E3 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":127 E6 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":128 F0 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":130 F4 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":132 FD maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":134 106 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":135 10B maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":136 10F maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":137 113 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":138 132 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":139 13F maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":140 141 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":141 162 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":142 16F maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":143 174 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":144 195 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":145 1A2 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":146 1A4 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":147 1C5 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":148 1D2 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":149 1D7 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":150 1F8 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":151 205 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":152 207 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":153 228 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":154 235 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":156 235 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":157 23B maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":158 23F maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":159 247 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":161 24B maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":163 24B maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":119 254 maintext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":7 255 text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":13 255 text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":15 257 text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":17 25C text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":19 25E text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":21 260 text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":22 261 text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":24 262 text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":26 264 text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":29 267 text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":31 26B text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":35 274 text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":37 275 text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":38 278 text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":39 27C text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":40 27D text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":41 281 text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":47 289 text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":49 28D text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":50 28D text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":52 29C text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":54 29E text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":55 2A0 text12 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":77 2A1 text1 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":79 2A1 text1 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":81 2AF text1 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":82 2C6 text1 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":84 2CA text1 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":79 2D6 text1 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":62 2DB text10 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":63 2DB text10 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":64 2DF text10 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":65 2E4 text10 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":66 2E5 text10 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":67 2E8 text10 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":69 2EA text10 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":70 2ED text10 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":71 2F0 text10 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":74 2F8 text10 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ADC.c":16 2F9 text8 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ADC.c":17 2FA text8 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ADC.c":18 2FF text8 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ADC.c":19 30A text8 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ADC.c":20 30B text8 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ADC.c":21 30D text8 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ADC.c":22 30F text8 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ADC.c":25 311 text8 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ADC.c":27 312 text8 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":36 314 text2 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":37 314 text2 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":39 316 text2 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":40 317 text2 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":41 319 text2 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":43 31A text2 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":45 31C text2 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":47 31E text2 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":48 320 text2 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":49 322 text2 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":51 324 text2 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":52 326 text2 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":53 328 text2 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":54 32A text2 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":65 32B text6 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":66 32B text6 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":67 32D text6 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":68 32F text6 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":69 330 text6 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":70 331 text6 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":71 332 text6 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":72 334 text6 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":73 336 text6 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":74 338 text6 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":75 33A text6 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":65 33B text13 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":66 33B text13 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":67 33D text13 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":68 33F text13 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":69 340 text13 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":70 341 text13 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":71 342 text13 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":72 344 text13 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":73 346 text13 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":74 348 text13 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_I2C_Slave.c":75 34A text13 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ECCP.c":3 34B text7 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ECCP.c":4 34B text7 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ECCP.c":5 34E text7 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ECCP.c":6 350 text7 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ECCP.c":7 354 text7 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ECCP.c":8 358 text7 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_TMR2.c":3 359 text5 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_TMR2.c":4 359 text5 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_TMR2.c":8 35E text5 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_TMR2.c":9 360 text5 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_TMR2.c":10 361 text5 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":56 362 text3 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":57 362 text3 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":58 367 text3 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/main.c":59 369 text3 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_WDT.c":3 36A text4 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_WDT.c":4 36A text4 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_WDT.c":5 36F text4 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_WDT.c":6 370 text4 CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1630 371 clrtext CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1631 371 clrtext CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1632 372 clrtext CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1633 372 clrtext CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1634 373 clrtext CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1635 374 clrtext CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1636 375 clrtext CODE
+"C:\Users\home\AppData\Local\Temp\s48g.":1637 376 clrtext CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ADC.c":37 377 text9 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ADC.c":38 377 text9 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ADC.c":39 379 text9 CODE
+"C:\Users\home\MPLABXProjects\pic12_i2c-dwarf\i2c-slave-dwarf/PIC12_ADC.c":40 37A text9 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_ONE_ISR_FITS_ALL 8 0 CODE 0 intentry dist/default/production\i2c-slave-dwarf.X.production.obj
+__size_ofi1_PIC12_I2C_Slave_init 0 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_RD CA8 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_WR CA9 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__end_of_PIC12_WDT_init 6E2 0 CODE 0 text4 dist/default/production\i2c-slave-dwarf.X.production.obj
+_PR2 1B 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__S0 37B 0 ABS 0 - -
+__S1 7A 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 F008 0 ABS 0 - -
+_GIE 5F 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_CKP 10AC 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_SSP1STATbits 214 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__Hintentry 20 0 CODE 0 intentry -
+__Lintentry 8 0 CODE 0 intentry -
+__pintentry 8 0 CODE 0 intentry dist/default/production\i2c-slave-dwarf.X.production.obj
+_PIC12_ADC_channelData 20 0 BANK0 1 bssBANK0 dist/default/production\i2c-slave-dwarf.X.production.obj
+_ADIF 8E 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_PEIE 5E 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_ADGO 4E9 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_ADON 4E8 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_WCOL 10AF 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_WREN CAA 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_STAV 24 0 BANK0 1 bssBANK0 dist/default/production\i2c-slave-dwarf.X.production.obj
+_D_nA 10A5 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_R_nW 10A2 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__end_of_ONE_ISR_FITS_ALL 20 0 CODE 0 intentry dist/default/production\i2c-slave-dwarf.X.production.obj
+_main 40 0 CODE 0 maintext dist/default/production\i2c-slave-dwarf.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\home\AppData\Local\Temp\s48g.obj
+btemp 7E 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+start 20 0 CODE 0 init C:\Users\home\AppData\Local\Temp\s48g.obj
+_ANSA1 C61 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_ANSA2 C62 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_WPUA1 1061 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_ANSA4 C64 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_WPUA2 1062 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_LATA5 865 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_pat16 26 0 BANK0 1 bssBANK0 dist/default/production\i2c-slave-dwarf.X.production.obj
+_TRISA 8C 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+PIC12_I2C_Slave_handler@BUF_temp 71 0 COMMON 1 cstackCOMMON dist/default/production\i2c-slave-dwarf.X.production.obj
+_PORTA C 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\home\AppData\Local\Temp\s48g.obj
+_EEADR 191 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_SSPOV 10AE 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_CARRY 18 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__Hconfig 0 0 CONFIG 0 config -
+__Lconfig 0 0 CONFIG 0 config -
+_PIC12_I2C_Slave_init 656 0 CODE 0 text6 dist/default/production\i2c-slave-dwarf.X.production.obj
+main@blik 40 0 BANK0 1 cstackBANK0 dist/default/production\i2c-slave-dwarf.X.production.obj
+__Bbigram 1E010 1E000 ABS 0 bigram -
+__Hbigram 10 1E000 ABS 0 bigram -
+__Lbigram 10 1E000 ABS 0 bigram -
+__Bram 1E010 1E000 ABS 0 ram -
+__Hram 10 1E000 ABS 0 ram -
+__Lram 10 1E000 ABS 0 ram -
+__end_of_PIC12_I2C_Slave_init 676 0 CODE 0 text6 dist/default/production\i2c-slave-dwarf.X.production.obj
+_PIC12_ECCP_init 696 0 CODE 0 text7 dist/default/production\i2c-slave-dwarf.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+_TRISA1 461 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__Lfunctab 0 0 CODE 0 functab -
+_TRISA2 462 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_ADCON0 9D 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_ADCON1 9E 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_EECON1 195 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_TRISA5 465 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_EECON2 196 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+i1_PIC12_I2C_Slave_init 676 0 CODE 0 text13 dist/default/production\i2c-slave-dwarf.X.production.obj
+_PIC12_ADC_read 5F2 0 CODE 0 text8 dist/default/production\i2c-slave-dwarf.X.production.obj
+__Bcommon 1E010 1E000 ABS 0 common -
+__Hcommon 10 1E000 ABS 0 common -
+__Lcommon 10 1E000 ABS 0 common -
+__Beeprom_data 1E000 1E000 EEDATA 3 eeprom_data -
+__Heeprom_data 10 1E000 EEDATA 3 eeprom_data -
+__Leeprom_data 0 1E000 EEDATA 3 eeprom_data -
+_SSP1IE 48B 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\home\AppData\Local\Temp\s48g.obj
+_SSP1IF 8B 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_CCPR1L 291 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_ANSELA 18C 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_EEDATA 193 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_ADRESH 9C 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_TMR2ON E2 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_SWDTEN 4B8 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__Babs1 1E010 1E000 ABS 0 abs1 -
+__Habs1 10 1E000 ABS 0 abs1 -
+__Labs1 10 1E000 ABS 0 abs1 -
+__Bsfr0 1E010 1E000 ABS 0 sfr0 -
+__Hsfr0 10 1E000 ABS 0 sfr0 -
+__Lsfr0 10 1E000 ABS 0 sfr0 -
+_nWPUEN 4AF 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__Bsfr1 1E010 1E000 ABS 0 sfr1 -
+__Hsfr1 10 1E000 ABS 0 sfr1 -
+__Lsfr1 10 1E000 ABS 0 sfr1 -
+__Bsfr2 1E010 1E000 ABS 0 sfr2 -
+__Hsfr2 10 1E000 ABS 0 sfr2 -
+__Lsfr2 10 1E000 ABS 0 sfr2 -
+__Bsfr3 1E010 1E000 ABS 0 sfr3 -
+__Hsfr3 10 1E000 ABS 0 sfr3 -
+__Lsfr3 10 1E000 ABS 0 sfr3 -
+__Bsfr4 1E010 1E000 ABS 0 sfr4 -
+__Hsfr4 10 1E000 ABS 0 sfr4 -
+__Lsfr4 10 1E000 ABS 0 sfr4 -
+__Bsfr5 1E010 1E000 ABS 0 sfr5 -
+__Hsfr5 10 1E000 ABS 0 sfr5 -
+pic14e$flags 7E 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__Lsfr5 10 1E000 ABS 0 sfr5 -
+__Bsfr6 1E010 1E000 ABS 0 sfr6 -
+__Hsfr6 10 1E000 ABS 0 sfr6 -
+__Lsfr6 10 1E000 ABS 0 sfr6 -
+__Bsfr7 1E010 1E000 ABS 0 sfr7 -
+__Hsfr7 10 1E000 ABS 0 sfr7 -
+__Lsfr7 10 1E000 ABS 0 sfr7 -
+__Bsfr8 1E010 1E000 ABS 0 sfr8 -
+__Hsfr8 10 1E000 ABS 0 sfr8 -
+__Lsfr8 10 1E000 ABS 0 sfr8 -
+__Bsfr9 1E010 1E000 ABS 0 sfr9 -
+__Hsfr9 10 1E000 ABS 0 sfr9 -
+__Lsfr9 10 1E000 ABS 0 sfr9 -
+PIC12_ADC_read@chan 75 0 COMMON 1 cstackCOMMON dist/default/production\i2c-slave-dwarf.X.production.obj
+__end_of_PIC12_TMR2_init 6C4 0 CODE 0 text5 dist/default/production\i2c-slave-dwarf.X.production.obj
+__Bcode 1E010 1E000 ABS 0 code -
+__Hcode 10 1E000 ABS 0 code -
+__Lcode 10 1E000 ABS 0 code -
+__size_of_PIC12_ADC_read 0 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+stackhi 20EF 0 ABS 0 - C:\Users\home\AppData\Local\Temp\s48g.obj
+__BcstackBANK0 1E010 1E000 ABS 0 cstackBANK0 -
+__HcstackBANK0 10 1E000 ABS 0 cstackBANK0 -
+__LcstackBANK0 10 1E000 ABS 0 cstackBANK0 -
+__pcstackBANK0 39 0 BANK0 1 cstackBANK0 dist/default/production\i2c-slave-dwarf.X.production.obj
+stacklo 2022 0 ABS 0 - C:\Users\home\AppData\Local\Temp\s48g.obj
+__Hinit 20 0 CODE 0 init -
+__Linit 20 0 CODE 0 init -
+__end_of_main 4AA 0 CODE 0 maintext dist/default/production\i2c-slave-dwarf.X.production.obj
+__end_of_goPat16 5B6 0 CODE 0 text1 dist/default/production\i2c-slave-dwarf.X.production.obj
+__Btext 1E010 1E000 ABS 0 text -
+__Htext 10 1E000 ABS 0 text -
+__Ltext 10 1E000 ABS 0 text -
+__size_of_goPat16 0 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_SSPBuffer 29 0 BANK0 1 bssBANK0 dist/default/production\i2c-slave-dwarf.X.production.obj
+__size_of_ONE_ISR_FITS_ALL 0 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+end_of_initialization 38 0 CODE 0 cinit dist/default/production\i2c-slave-dwarf.X.production.obj
+__size_of_PIC12_ADC_init 0 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__size_of_PIC12_WDT_init 0 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__Bsfr10 1E010 1E000 ABS 0 sfr10 -
+__Hsfr10 10 1E000 ABS 0 sfr10 -
+__Lsfr10 10 1E000 ABS 0 sfr10 -
+__Bsfr20 1E010 1E000 ABS 0 sfr20 -
+__Hsfr20 10 1E000 ABS 0 sfr20 -
+__Lsfr20 10 1E000 ABS 0 sfr20 -
+__Bsfr30 1E010 1E000 ABS 0 sfr30 -
+__Bsfr11 1E010 1E000 ABS 0 sfr11 -
+__Hsfr30 10 1E000 ABS 0 sfr30 -
+__Hsfr11 10 1E000 ABS 0 sfr11 -
+__Lsfr30 10 1E000 ABS 0 sfr30 -
+__Lsfr11 10 1E000 ABS 0 sfr11 -
+__Bsfr21 1E010 1E000 ABS 0 sfr21 -
+__Hsfr21 10 1E000 ABS 0 sfr21 -
+__Lsfr21 10 1E000 ABS 0 sfr21 -
+__Bsfr31 1E010 1E000 ABS 0 sfr31 -
+__Bsfr12 1E010 1E000 ABS 0 sfr12 -
+__Hsfr31 10 1E000 ABS 0 sfr31 -
+__Hsfr12 10 1E000 ABS 0 sfr12 -
+__Lsfr31 10 1E000 ABS 0 sfr31 -
+__Lsfr12 10 1E000 ABS 0 sfr12 -
+__Bsfr22 1E010 1E000 ABS 0 sfr22 -
+__Hsfr22 10 1E000 ABS 0 sfr22 -
+__Lsfr22 10 1E000 ABS 0 sfr22 -
+__Bsfr13 1E010 1E000 ABS 0 sfr13 -
+__Hsfr13 10 1E000 ABS 0 sfr13 -
+__Lsfr13 10 1E000 ABS 0 sfr13 -
+__Bsfr23 1E010 1E000 ABS 0 sfr23 -
+__Hsfr23 10 1E000 ABS 0 sfr23 -
+__Lsfr23 10 1E000 ABS 0 sfr23 -
+__Bsfr14 1E010 1E000 ABS 0 sfr14 -
+__Hsfr14 10 1E000 ABS 0 sfr14 -
+__Lsfr14 10 1E000 ABS 0 sfr14 -
+__Bsfr24 1E010 1E000 ABS 0 sfr24 -
+__Hsfr24 10 1E000 ABS 0 sfr24 -
+__Lsfr24 10 1E000 ABS 0 sfr24 -
+__Bsfr15 1E010 1E000 ABS 0 sfr15 -
+__Hsfr15 10 1E000 ABS 0 sfr15 -
+_goPat16 542 0 CODE 0 text1 dist/default/production\i2c-slave-dwarf.X.production.obj
+__Lsfr15 10 1E000 ABS 0 sfr15 -
+__Bsfr25 1E010 1E000 ABS 0 sfr25 -
+__Hsfr25 10 1E000 ABS 0 sfr25 -
+__Lsfr25 10 1E000 ABS 0 sfr25 -
+__Bsfr16 1E010 1E000 ABS 0 sfr16 -
+__Hsfr16 10 1E000 ABS 0 sfr16 -
+__Lsfr16 10 1E000 ABS 0 sfr16 -
+__Bsfr26 1E010 1E000 ABS 0 sfr26 -
+__Hsfr26 10 1E000 ABS 0 sfr26 -
+__Lsfr26 10 1E000 ABS 0 sfr26 -
+__Bsfr17 1E010 1E000 ABS 0 sfr17 -
+__Hsfr17 10 1E000 ABS 0 sfr17 -
+__Lsfr17 10 1E000 ABS 0 sfr17 -
+__Bsfr27 1E010 1E000 ABS 0 sfr27 -
+__Hsfr27 10 1E000 ABS 0 sfr27 -
+__Lsfr27 10 1E000 ABS 0 sfr27 -
+__Bsfr18 1E010 1E000 ABS 0 sfr18 -
+__Hsfr18 10 1E000 ABS 0 sfr18 -
+__Lsfr18 10 1E000 ABS 0 sfr18 -
+__Bsfr28 1E010 1E000 ABS 0 sfr28 -
+__Hsfr28 10 1E000 ABS 0 sfr28 -
+_SSP1ADD 212 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__Lsfr28 10 1E000 ABS 0 sfr28 -
+__Bsfr19 1E010 1E000 ABS 0 sfr19 -
+__Hsfr19 10 1E000 ABS 0 sfr19 -
+__Lsfr19 10 1E000 ABS 0 sfr19 -
+__Bsfr29 1E010 1E000 ABS 0 sfr29 -
+__Hsfr29 10 1E000 ABS 0 sfr29 -
+__Lsfr29 10 1E000 ABS 0 sfr29 -
+__Bstrings 1E010 1E000 ABS 0 strings -
+__Hstrings 10 1E000 ABS 0 strings -
+_T2CONbits 1C 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__Lstrings 10 1E000 ABS 0 strings -
+_SSP1BUF 211 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_CCP1SEL 8E8 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__end_ofi1_PIC12_I2C_Slave_init 696 0 CODE 0 text13 dist/default/production\i2c-slave-dwarf.X.production.obj
+_SSP1MSK 213 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__Bbank0 1E010 1E000 ABS 0 bank0 -
+__Hbank0 10 1E000 ABS 0 bank0 -
+__Lbank0 10 1E000 ABS 0 bank0 -
+__Bbank1 1E010 1E000 ABS 0 bank1 -
+__Hbank1 10 1E000 ABS 0 bank1 -
+__Lbank1 10 1E000 ABS 0 bank1 -
+__Bbank2 1E010 1E000 ABS 0 bank2 -
+__Hbank2 10 1E000 ABS 0 bank2 -
+__Lbank2 10 1E000 ABS 0 bank2 -
+__Bbank3 1E010 1E000 BANK3 1 bank3 -
+__Hbank3 10 1E000 BANK3 1 bank3 -
+__Lbank3 10 1E000 BANK3 1 bank3 -
+___latbits 1 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__Bbank4 1E010 1E000 BANK4 1 bank4 -
+__Hbank4 10 1E000 BANK4 1 bank4 -
+__Lbank4 10 1E000 BANK4 1 bank4 -
+_ACKSTAT 10B6 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__Bbank5 1E010 1E000 BANK5 1 bank5 -
+__Hbank5 10 1E000 BANK5 1 bank5 -
+__Lbank5 10 1E000 BANK5 1 bank5 -
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__Bbank6 1E010 1E000 BANK6 1 bank6 -
+__Hbank6 10 1E000 BANK6 1 bank6 -
+__Lbank6 10 1E000 BANK6 1 bank6 -
+__Bbank7 1E010 1E000 BANK7 1 bank7 -
+__Hbank7 10 1E000 BANK7 1 bank7 -
+__Lbank7 10 1E000 BANK7 1 bank7 -
+__Bbank8 1E010 1E000 BANK8 1 bank8 -
+__Hbank8 10 1E000 BANK8 1 bank8 -
+__Lbank8 10 1E000 BANK8 1 bank8 -
+__Bbank9 1E010 1E000 BANK9 1 bank9 -
+__Hbank9 10 1E000 BANK9 1 bank9 -
+__Lbank9 10 1E000 BANK9 1 bank9 -
+__ptext0 0 0 CODE 0 text0 dist/default/production\i2c-slave-dwarf.X.production.obj
+__ptext1 542 0 CODE 0 text1 dist/default/production\i2c-slave-dwarf.X.production.obj
+__ptext2 628 0 CODE 0 text2 dist/default/production\i2c-slave-dwarf.X.production.obj
+__end_of_PIC12_I2C_Slave_handler 542 0 CODE 0 text12 dist/default/production\i2c-slave-dwarf.X.production.obj
+_PIC12_ADC_init 6EE 0 CODE 0 text9 dist/default/production\i2c-slave-dwarf.X.production.obj
+__ptext3 6C4 0 CODE 0 text3 dist/default/production\i2c-slave-dwarf.X.production.obj
+__ptext4 6D4 0 CODE 0 text4 dist/default/production\i2c-slave-dwarf.X.production.obj
+__ptext5 6B2 0 CODE 0 text5 dist/default/production\i2c-slave-dwarf.X.production.obj
+__ptext6 656 0 CODE 0 text6 dist/default/production\i2c-slave-dwarf.X.production.obj
+__ptext7 696 0 CODE 0 text7 dist/default/production\i2c-slave-dwarf.X.production.obj
+__ptext8 5F2 0 CODE 0 text8 dist/default/production\i2c-slave-dwarf.X.production.obj
+__ptext9 6EE 0 CODE 0 text9 dist/default/production\i2c-slave-dwarf.X.production.obj
+__Bclrtext 1E010 1E000 ABS 0 clrtext -
+__Hclrtext 10 1E000 ABS 0 clrtext -
+__Lclrtext 10 1E000 ABS 0 clrtext -
+_SYS_IO_init 628 0 CODE 0 text2 dist/default/production\i2c-slave-dwarf.X.production.obj
+__size_of_I2C_processBuffers 0 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__end_of__initialization 38 0 CODE 0 cinit dist/default/production\i2c-slave-dwarf.X.production.obj
+_CCP1CONbits 293 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+__Hspace_0 37B 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+__Hspace_1 7A 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__size_of_PIC12_I2C_Slave_handler 0 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__Hcinit 40 0 CODE 0 cinit -
+__Lcinit 24 0 CODE 0 cinit -
+__Hspace_3 8 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__size_of_main 0 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__end_of_I2C_processBuffers 5F2 0 CODE 0 text10 dist/default/production\i2c-slave-dwarf.X.production.obj
+_PIC12_I2C_Slave_handler 4AA 0 CODE 0 text12 dist/default/production\i2c-slave-dwarf.X.production.obj
+clear_ram0 6E2 0 CODE 0 clrtext dist/default/production\i2c-slave-dwarf.X.production.obj
+__BbssBANK0 1E010 1E000 ABS 0 bssBANK0 -
+__HbssBANK0 10 1E000 ABS 0 bssBANK0 -
+__LbssBANK0 10 1E000 ABS 0 bssBANK0 -
+_SSP1CON1 215 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__Bbank10 1E010 1E000 BANK10 1 bank10 -
+__Hbank10 10 1E000 BANK10 1 bank10 -
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\i2c-slave-dwarf.X.production.obj
+__Lbank10 10 1E000 BANK10 1 bank10 -
+__Bbank20 1E010 1E000 BANK20 1 bank20 -
+__Hbank20 10 1E000 BANK20 1 bank20 -
+__Lbank20 10 1E000 BANK20 1 bank20 -
+_SSP1CON2 216 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__Bbank30 1E010 1E000 BANK30 1 bank30 -
+__Bbank11 1E010 1E000 BANK11 1 bank11 -
+__Hbank30 10 1E000 BANK30 1 bank30 -
+__Hbank11 10 1E000 BANK11 1 bank11 -
+__Lbank30 10 1E000 BANK30 1 bank30 -
+__Lbank11 10 1E000 BANK11 1 bank11 -
+__Bbank21 1E010 1E000 BANK21 1 bank21 -
+__Hbank21 10 1E000 BANK21 1 bank21 -
+__Lbank21 10 1E000 BANK21 1 bank21 -
+_SSP1CON3 217 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__Bbank31 1E010 1E000 BANK31 1 bank31 -
+__Bbank12 1E010 1E000 BANK12 1 bank12 -
+__Hbank31 10 1E000 BANK31 1 bank31 -
+__Hbank12 10 1E000 BANK12 1 bank12 -
+__Lbank31 10 1E000 BANK31 1 bank31 -
+__Lbank12 10 1E000 BANK12 1 bank12 -
+__Bbank22 1E010 1E000 BANK22 1 bank22 -
+__Hbank22 10 1E000 BANK22 1 bank22 -
+__Lbank22 10 1E000 BANK22 1 bank22 -
+_PIC12_WDT_init 6D4 0 CODE 0 text4 dist/default/production\i2c-slave-dwarf.X.production.obj
+__Bbank13 1E010 1E000 BANK13 1 bank13 -
+__Hbank13 10 1E000 BANK13 1 bank13 -
+__Lbank13 10 1E000 BANK13 1 bank13 -
+__Bbank23 1E010 1E000 BANK23 1 bank23 -
+__Hbank23 10 1E000 BANK23 1 bank23 -
+__Lbank23 10 1E000 BANK23 1 bank23 -
+__Bbank14 1E010 1E000 BANK14 1 bank14 -
+__Hbank14 10 1E000 BANK14 1 bank14 -
+__Lbank14 10 1E000 BANK14 1 bank14 -
+_I2C_processBuffers 5B6 0 CODE 0 text10 dist/default/production\i2c-slave-dwarf.X.production.obj
+__Bbank24 1E010 1E000 BANK24 1 bank24 -
+__Hbank24 10 1E000 BANK24 1 bank24 -
+__Lbank24 10 1E000 BANK24 1 bank24 -
+__Bbank15 1E010 1E000 BANK15 1 bank15 -
+__ptext10 5B6 0 CODE 0 text10 dist/default/production\i2c-slave-dwarf.X.production.obj
+__Hbank15 10 1E000 BANK15 1 bank15 -
+__Lbank15 10 1E000 BANK15 1 bank15 -
+__Bbank25 1E010 1E000 BANK25 1 bank25 -
+__Hbank25 10 1E000 BANK25 1 bank25 -
+__Lbank25 10 1E000 BANK25 1 bank25 -
+__Bbank16 1E010 1E000 BANK16 1 bank16 -
+__Hbank16 10 1E000 BANK16 1 bank16 -
+__Lbank16 10 1E000 BANK16 1 bank16 -
+__Bbank26 1E010 1E000 BANK26 1 bank26 -
+__Hbank26 10 1E000 BANK26 1 bank26 -
+__Lbank26 10 1E000 BANK26 1 bank26 -
+__Bbank17 1E010 1E000 BANK17 1 bank17 -
+__ptext12 4AA 0 CODE 0 text12 dist/default/production\i2c-slave-dwarf.X.production.obj
+__Hbank17 10 1E000 BANK17 1 bank17 -
+__Lbank17 10 1E000 BANK17 1 bank17 -
+__size_of_SYS_CLK_init 0 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__Bbank27 1E010 1E000 BANK27 1 bank27 -
+__Hbank27 10 1E000 BANK27 1 bank27 -
+__Lbank27 10 1E000 BANK27 1 bank27 -
+__Bbank18 1E010 1E000 BANK18 1 bank18 -
+__ptext13 676 0 CODE 0 text13 dist/default/production\i2c-slave-dwarf.X.production.obj
+__Hbank18 10 1E000 BANK18 1 bank18 -
+__Lbank18 10 1E000 BANK18 1 bank18 -
+__Bbank28 1E010 1E000 BANK28 1 bank28 -
+__Hbank28 10 1E000 BANK28 1 bank28 -
+__Lbank28 10 1E000 BANK28 1 bank28 -
+__Bbank19 1E010 1E000 BANK19 1 bank19 -
+__Hbank19 10 1E000 BANK19 1 bank19 -
+__Lbank19 10 1E000 BANK19 1 bank19 -
+__Bbank29 1E010 1E000 BANK29 1 bank29 -
+__Hbank29 10 1E000 BANK29 1 bank29 -
+__Lbank29 10 1E000 BANK29 1 bank29 -
+__end_of_SYS_IO_init 656 0 CODE 0 text2 dist/default/production\i2c-slave-dwarf.X.production.obj
+__BbssCOMMON 1E010 1E000 ABS 0 bssCOMMON -
+__HbssCOMMON 10 1E000 ABS 0 bssCOMMON -
+__LbssCOMMON 10 1E000 ABS 0 bssCOMMON -
+__pbssCOMMON 77 0 COMMON 1 bssCOMMON dist/default/production\i2c-slave-dwarf.X.production.obj
+_OSCCONbits 99 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_WDTCONbits 97 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+_PIC12_TMR2_init 6B2 0 CODE 0 text5 dist/default/production\i2c-slave-dwarf.X.production.obj
+__Hend_init 24 0 CODE 0 end_init -
+__Lend_init 20 0 CODE 0 end_init -
+__size_of_SYS_IO_init 0 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+PIC12_I2C_Slave_handler@byte_ptr 77 0 COMMON 1 bssCOMMON dist/default/production\i2c-slave-dwarf.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+goPat16@byte8 73 0 COMMON 1 cstackCOMMON dist/default/production\i2c-slave-dwarf.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\home\AppData\Local\Temp\s48g.obj
+_SSP1STAT 214 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+intlevel1 0 0 CODE 0 functab C:\Users\home\AppData\Local\Temp\s48g.obj
+intlevel2 0 0 CODE 0 functab C:\Users\home\AppData\Local\Temp\s48g.obj
+intlevel3 0 0 CODE 0 functab C:\Users\home\AppData\Local\Temp\s48g.obj
+__size_of_PIC12_I2C_Slave_init 0 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__end_of_PIC12_ADC_read 628 0 CODE 0 text8 dist/default/production\i2c-slave-dwarf.X.production.obj
+intlevel4 0 0 CODE 0 functab C:\Users\home\AppData\Local\Temp\s48g.obj
+PIC12_I2C_Slave_handler@registerIndex 78 0 COMMON 1 bssCOMMON dist/default/production\i2c-slave-dwarf.X.production.obj
+intlevel5 0 0 CODE 0 functab C:\Users\home\AppData\Local\Temp\s48g.obj
+__end_of_PIC12_ADC_init 6F6 0 CODE 0 text9 dist/default/production\i2c-slave-dwarf.X.production.obj
+__BcstackCOMMON 1E010 1E000 ABS 0 cstackCOMMON -
+__HcstackCOMMON 10 1E000 ABS 0 cstackCOMMON -
+__LcstackCOMMON 10 1E000 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\i2c-slave-dwarf.X.production.obj
+start_initialization 24 0 CODE 0 cinit dist/default/production\i2c-slave-dwarf.X.production.obj
+_SYS_CLK_init 6C4 0 CODE 0 text3 dist/default/production\i2c-slave-dwarf.X.production.obj
+goPat16@i 75 0 COMMON 1 cstackCOMMON dist/default/production\i2c-slave-dwarf.X.production.obj
+__Bmaintext 1E010 1E000 ABS 0 maintext -
+__Hmaintext 10 1E000 ABS 0 maintext -
+__Lmaintext 10 1E000 ABS 0 maintext -
+__size_of_PIC12_TMR2_init 0 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__pmaintext 40 0 CODE 0 maintext dist/default/production\i2c-slave-dwarf.X.production.obj
+__size_of_PIC12_ECCP_init 0 0 ABS 0 - dist/default/production\i2c-slave-dwarf.X.production.obj
+__end_of_PIC12_ECCP_init 6B2 0 CODE 0 text7 dist/default/production\i2c-slave-dwarf.X.production.obj
+_SSP_bufIndex 79 0 COMMON 1 bssCOMMON dist/default/production\i2c-slave-dwarf.X.production.obj
+__end_of_SYS_CLK_init 6D4 0 CODE 0 text3 dist/default/production\i2c-slave-dwarf.X.production.obj
+__initialization 24 0 CODE 0 cinit dist/default/production\i2c-slave-dwarf.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 2 2
+intentry 0 4 8 377 2
+eeprom_data 3 0 1E000 8 2
+cstackCOMMON 1 70 70 A 1
+bssBANK0 1 20 20 22 1
