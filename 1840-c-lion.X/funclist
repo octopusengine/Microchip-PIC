@@ -1,0 +1,10 @@
+_init: CODE, 1431 0 18
+_goPat: CODE, 1490 0 54
+_main: CODE, 1745 0 284
+_set4mhz: CODE, 1404 0 4
+__initialization: CODE, 2029 0 15
+_zobrazLed: CODE, 1608 0 137
+_ulozData: CODE, 1544 0 64
+_initAnalog: CODE, 1449 0 41
+_adcSample: CODE, 1414 0 17
+Total: 634

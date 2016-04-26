@@ -1,0 +1,608 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\home\AppData\Local\Temp\s1h4.obj
+end_init CODE 0 2 2 2 2
+reset_vec CODE 0 0 0 2 2
+config CONFIG 0 8007 8007 1 2
+$dist/default/production\1840-c-lion.X.production.obj
+cinit CODE 0 7ED 7ED 13 2
+text7 CODE 0 586 586 11 2
+text6 CODE 0 57C 57C 4 2
+text5 CODE 0 597 597 12 2
+text4 CODE 0 5A9 5A9 29 2
+text3 CODE 0 608 608 40 2
+text2 CODE 0 5D2 5D2 36 2
+text1 CODE 0 648 648 89 2
+maintext CODE 0 6D1 6D1 11C 2
+cstackBANK0 BANK0 1 47 47 3 1
+cstackCOMMON COMMON 1 70 70 D 1
+clrtext CODE 0 580 580 6 2
+dataBANK0 BANK0 1 4C 4C 2 1
+bssBANK0 BANK0 1 20 20 27 1
+nvBANK0 BANK0 1 4A 4A 2 1
+idataBANK0 CODE 0 57A 57A 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0004E-0006F 1
+BANK1 000A0-000EF 1
+BANK2 00120-0016F 1
+BIGRAM 02000-020EF 1
+CODE 00004-00579 2
+CODE 00800-00FFF 2
+COMMON 0007D-0007D 1
+CONFIG 08008-08008 2
+CONST 00004-00579 2
+CONST 00800-00FFF 2
+EEDATA 0F000-0F0FF 2
+ENTRY 00004-00579 2
+ENTRY 00800-00FFF 2
+IDLOC 08000-08003 2
+RAM 0004E-0006F 1
+RAM 000A0-000EF 1
+RAM 00120-0016F 1
+SFR0 00000-0001F 1
+SFR1 00080-0009F 1
+SFR10 00500-0056F 1
+SFR11 00580-005EF 1
+SFR12 00600-0066F 1
+SFR13 00680-006EF 1
+SFR14 00700-0076F 1
+SFR15 00780-007EF 1
+SFR16 00800-0086F 1
+SFR17 00880-008EF 1
+SFR18 00900-0096F 1
+SFR19 00980-009EF 1
+SFR2 00100-0011F 1
+SFR20 00A00-00A6F 1
+SFR21 00A80-00AEF 1
+SFR22 00B00-00B6F 1
+SFR23 00B80-00BEF 1
+SFR24 00C00-00C6F 1
+SFR25 00C80-00CEF 1
+SFR26 00D00-00D6F 1
+SFR27 00D80-00DEF 1
+SFR28 00E00-00E6F 1
+SFR29 00E80-00EEF 1
+SFR3 00180-001EF 1
+SFR30 00F00-00F6F 1
+SFR31 00F80-00FEF 1
+SFR4 00200-0026F 1
+SFR5 00280-002EF 1
+SFR6 00300-0036F 1
+SFR7 00380-003EF 1
+SFR8 00400-0046F 1
+SFR9 00480-004EF 1
+STACK 0202E-020EF 1
+STRCODE 00004-00579 2
+STRCODE 00800-00FFF 2
+STRING 00004-00579 2
+STRING 00800-00FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\1840-c-lion.X.production.obj
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h":23 57C text6 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h":29 57C text6 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h":30 57F text6 CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":462 580 clrtext CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":463 580 clrtext CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":464 581 clrtext CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":465 581 clrtext CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":466 582 clrtext CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":467 583 clrtext CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":468 584 clrtext CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":469 585 clrtext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":209 586 text7 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":211 586 text7 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":214 589 text7 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":215 58B text7 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":222 58E text7 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":215 596 text7 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":160 597 text5 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":162 597 text5 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":163 59A text5 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":166 59C text5 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":168 59E text5 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":169 5A0 text5 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":170 5A2 text5 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":172 5A4 text5 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":175 5A5 text5 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":176 5A8 text5 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h":459 5A9 text4 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h":485 5A9 text4 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h":487 5AB text4 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h":492 5AC text4 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h":493 5AE text4 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h":496 5AF text4 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h":497 5B3 text4 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h":500 5B4 text4 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h":501 5B8 text4 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h":504 5B9 text4 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h":508 5BD text4 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h":487 5BE text4 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h":509 5D1 text4 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":196 5D2 text2 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":198 5D2 text2 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":200 5DF text2 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":201 5F6 text2 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":203 5FB text2 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":198 603 text2 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":185 608 text3 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":187 608 text3 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":188 62B text3 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":191 634 text3 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":192 639 text3 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":229 648 text1 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":235 648 text1 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":236 656 text1 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":237 65B text1 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":238 65F text1 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":239 66E text1 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":240 67D text1 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":241 68C text1 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":242 69B text1 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":243 6AA text1 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":244 6B9 text1 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":245 6C8 text1 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":247 6D0 text1 CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":65 6D1 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":67 6D1 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":68 6D4 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":69 6DB maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":70 6DE maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":71 6E8 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":73 6EF maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":74 6F6 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":75 6F9 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":76 703 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":78 70A maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":79 713 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":81 71D maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":82 722 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":83 729 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":84 72B maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":85 738 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":91 73F maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":92 746 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":93 749 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":94 753 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":96 75A maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":97 761 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":98 764 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":99 76E maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":108 775 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":109 78C maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":110 78E maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":112 792 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":114 793 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":115 798 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":116 7A1 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":123 7A6 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":125 7B2 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":127 7BE maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":128 7C8 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":129 7D2 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":132 7D7 maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":133 7DE maintext CODE
+"C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c":130 7EC maintext CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":411 7ED cinit CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":414 7ED cinit CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":473 7ED cinit CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":474 7EE cinit CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":475 7EF cinit CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":476 7F0 cinit CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":477 7F1 cinit CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":478 7F2 cinit CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":483 7F5 cinit CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":484 7F8 cinit CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":485 7F9 cinit CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":486 7FB cinit CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":492 7FC cinit CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":493 7FC cinit CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":494 7FD cinit CODE
+"C:\Users\home\AppData\Local\Temp\s1h4.":495 7FE cinit CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_i 35 0 BANK0 1 bssBANK0 dist/default/production\1840-c-lion.X.production.obj
+_WR CA9 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__S0 8008 0 ABS 0 - -
+__S1 7D 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_GIE 5F 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__Hintentry 4 0 CODE 0 intentry -
+__Lintentry 4 0 CODE 0 intentry -
+_rem 37 0 BANK0 1 bssBANK0 dist/default/production\1840-c-lion.X.production.obj
+_adr 4C 0 BANK0 1 dataBANK0 dist/default/production\1840-c-lion.X.production.obj
+_RCIF 8D 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__end_of_init B52 0 CODE 0 text5 dist/default/production\1840-c-lion.X.production.obj
+_val1 3D 0 BANK0 1 bssBANK0 dist/default/production\1840-c-lion.X.production.obj
+_val2 3F 0 BANK0 1 bssBANK0 dist/default/production\1840-c-lion.X.production.obj
+_WREN CAA 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_main DA2 0 CODE 0 maintext dist/default/production\1840-c-lion.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\home\AppData\Local\Temp\s1h4.obj
+btemp 7E 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_init B2E 0 CODE 0 text5 dist/default/production\1840-c-lion.X.production.obj
+start 4 0 CODE 0 init C:\Users\home\AppData\Local\Temp\s1h4.obj
+_ulozData C10 0 CODE 0 text3 dist/default/production\1840-c-lion.X.production.obj
+_RCREG 199 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_TRISA 8C 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_TXREG 19A 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_PORTA C 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\home\AppData\Local\Temp\s1h4.obj
+_SPBRG 19B 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_EEADR 191 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_sGPIO 39 0 BANK0 1 bssBANK0 dist/default/production\1840-c-lion.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__size_of_init 0 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_CARRY 18 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__Hconfig 10010 0 CONFIG 0 config -
+__Lconfig 1000E 0 CONFIG 0 config -
+_zobrazLed C90 0 CODE 0 text1 dist/default/production\1840-c-lion.X.production.obj
+uart_dump@i 45 0 BANK0 1 bssBANK0 dist/default/production\1840-c-lion.X.production.obj
+__Hbigram 0 0 ABS 0 bigram -
+__Lbigram 0 0 ABS 0 bigram -
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_goPat BA4 0 CODE 0 text2 dist/default/production\1840-c-lion.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+_ADCON0 9D 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_ADCON1 9E 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_EECON1 195 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_EECON2 196 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__size_of_initAnalog 0 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_temp_num 3B 0 BANK0 1 bssBANK0 dist/default/production\1840-c-lion.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\home\AppData\Local\Temp\s1h4.obj
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_ANSELA 18C 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_EEDATA 193 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_SPBRGH 19C 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_ADRESH 9C 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_OSCCON 99 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+pic14e$flags 7E 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+_FVRRDY 8BE 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+_valADc 4A 0 BANK0 1 nvBANK0 dist/default/production\1840-c-lion.X.production.obj
+_adcSample B0C 0 CODE 0 text7 dist/default/production\1840-c-lion.X.production.obj
+goPat@i 76 0 COMMON 1 cstackCOMMON dist/default/production\1840-c-lion.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+stackhi 20EF 0 ABS 0 - C:\Users\home\AppData\Local\Temp\s1h4.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__pcstackBANK0 47 0 BANK0 1 cstackBANK0 dist/default/production\1840-c-lion.X.production.obj
+stacklo 202E 0 ABS 0 - C:\Users\home\AppData\Local\Temp\s1h4.obj
+__end_of_goPat C10 0 CODE 0 text2 dist/default/production\1840-c-lion.X.production.obj
+__Hinit 4 0 CODE 0 init -
+__Linit 4 0 CODE 0 init -
+__end_of_main FDA 0 CODE 0 maintext dist/default/production\1840-c-lion.X.production.obj
+_retnum 20 0 BANK0 1 bssBANK0 dist/default/production\1840-c-lion.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+zobrazLed@pom 78 0 COMMON 1 cstackCOMMON dist/default/production\1840-c-lion.X.production.obj
+zobrazLed@pat16 7B 0 COMMON 1 cstackCOMMON dist/default/production\1840-c-lion.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__pdataBANK0 4C 0 BANK0 1 dataBANK0 dist/default/production\1840-c-lion.X.production.obj
+ulozData@value 70 0 COMMON 1 cstackCOMMON dist/default/production\1840-c-lion.X.production.obj
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\1840-c-lion.X.production.obj
+_CM1CON0 111 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+__pnvBANK0 4A 0 BANK0 1 nvBANK0 dist/default/production\1840-c-lion.X.production.obj
+_CPSCON0 1E 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+_RCSTAbits 19D 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_TXSTAbits 19E 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__end_of_set4mhz B00 0 CODE 0 text6 dist/default/production\1840-c-lion.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Lbank3 0 0 BANK3 1 bank3 -
+___latbits 1 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__Hbank4 0 0 BANK4 1 bank4 -
+__Lbank4 0 0 BANK4 1 bank4 -
+__Hbank5 0 0 BANK5 1 bank5 -
+__Lbank5 0 0 BANK5 1 bank5 -
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__Hbank6 0 0 BANK6 1 bank6 -
+__Lbank6 0 0 BANK6 1 bank6 -
+__Hbank7 0 0 BANK7 1 bank7 -
+__Lbank7 0 0 BANK7 1 bank7 -
+__Hbank8 0 0 BANK8 1 bank8 -
+__Lbank8 0 0 BANK8 1 bank8 -
+__Hbank9 0 0 BANK9 1 bank9 -
+__Lbank9 0 0 BANK9 1 bank9 -
+__ptext1 C90 0 CODE 0 text1 dist/default/production\1840-c-lion.X.production.obj
+__ptext2 BA4 0 CODE 0 text2 dist/default/production\1840-c-lion.X.production.obj
+__ptext3 C10 0 CODE 0 text3 dist/default/production\1840-c-lion.X.production.obj
+__ptext4 B52 0 CODE 0 text4 dist/default/production\1840-c-lion.X.production.obj
+__ptext5 B2E 0 CODE 0 text5 dist/default/production\1840-c-lion.X.production.obj
+__ptext6 AF8 0 CODE 0 text6 dist/default/production\1840-c-lion.X.production.obj
+__ptext7 B0C 0 CODE 0 text7 dist/default/production\1840-c-lion.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+goPat@byte8 70 0 COMMON 1 cstackCOMMON dist/default/production\1840-c-lion.X.production.obj
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\1840-c-lion.X.production.obj
+_BAUDCONbits 19F 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_initAnalog B52 0 CODE 0 text4 dist/default/production\1840-c-lion.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+__Hspace_0 8008 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+__Hspace_1 7D 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Hcinit 1000 0 CODE 0 cinit -
+__Lcinit FDA 0 CODE 0 cinit -
+__size_of_goPat 0 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_set4mhz AF8 0 CODE 0 text6 dist/default/production\1840-c-lion.X.production.obj
+__Hspace_3 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__size_of_main 0 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_vypnuto 43 0 BANK0 1 bssBANK0 dist/default/production\1840-c-lion.X.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__pidataBANK0 AF4 0 CODE 0 idataBANK0 dist/default/production\1840-c-lion.X.production.obj
+clear_ram0 B00 0 CODE 0 clrtext dist/default/production\1840-c-lion.X.production.obj
+_valADc16 41 0 BANK0 1 bssBANK0 dist/default/production\1840-c-lion.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__Hbank10 0 0 BANK10 1 bank10 -
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\1840-c-lion.X.production.obj
+__Lbank10 0 0 BANK10 1 bank10 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank11 0 0 BANK11 1 bank11 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank11 0 0 BANK11 1 bank11 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbank12 0 0 BANK12 1 bank12 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__Lbank12 0 0 BANK12 1 bank12 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__size_of_adcSample 0 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__Hbank23 0 0 BANK23 1 bank23 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Lbank18 0 0 BANK18 1 bank18 -
+_ADCON0bits 9D 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_ADCON1bits 9E 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__Hbank28 0 0 BANK28 1 bank28 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__end_of_zobrazLed DA2 0 CODE 0 text1 dist/default/production\1840-c-lion.X.production.obj
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_APFCONbits 11D 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_OSCCONbits 99 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+_FVRCONbits 117 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__Hend_init 8 0 CODE 0 end_init -
+__Lend_init 4 0 CODE 0 end_init -
+__end_of_ulozData C90 0 CODE 0 text3 dist/default/production\1840-c-lion.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of_initAnalog BA4 0 CODE 0 text4 dist/default/production\1840-c-lion.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\home\AppData\Local\Temp\s1h4.obj
+initAnalog@ch 70 0 COMMON 1 cstackCOMMON dist/default/production\1840-c-lion.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+intlevel1 0 0 CODE 0 functab C:\Users\home\AppData\Local\Temp\s1h4.obj
+intlevel2 0 0 CODE 0 functab C:\Users\home\AppData\Local\Temp\s1h4.obj
+intlevel3 0 0 CODE 0 functab C:\Users\home\AppData\Local\Temp\s1h4.obj
+intlevel4 0 0 CODE 0 functab C:\Users\home\AppData\Local\Temp\s1h4.obj
+intlevel5 0 0 CODE 0 functab C:\Users\home\AppData\Local\Temp\s1h4.obj
+__size_of_zobrazLed 0 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\1840-c-lion.X.production.obj
+__end_of_adcSample B2E 0 CODE 0 text7 dist/default/production\1840-c-lion.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+start_initialization FDA 0 CODE 0 cinit dist/default/production\1840-c-lion.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__size_of_set4mhz 0 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__pmaintext DA2 0 CODE 0 maintext dist/default/production\1840-c-lion.X.production.obj
+__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__initialization FDA 0 CODE 0 cinit dist/default/production\1840-c-lion.X.production.obj
+__size_of_ulozData 0 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\1840-c-lion.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 4 2
+cinit 0 7ED FDA 13 2
+config 0 8007 1000E 1 2
+cstackCOMMON 1 70 70 D 1
+bssBANK0 1 20 20 2E 1
+maintext 0 6D1 DA2 11C 2
+text1 0 648 C90 89 2
+text3 0 608 C10 40 2
+text2 0 5D2 BA4 36 2
+text4 0 5A9 B52 29 2
+text5 0 597 B2E 12 2
+text7 0 586 B0C 11 2
+clrtext 0 580 B00 6 2
+text6 0 57C AF8 4 2
+idataBANK0 0 57A AF4 2 2

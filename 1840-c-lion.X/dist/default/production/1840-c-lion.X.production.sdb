@@ -1,0 +1,395 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 12F1840 ]
+[d frameptr 6 ]
+"65 C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c
+[v _main main `(v  1 e 0 0 ]
+"146
+[v _buttonpressed buttonpressed `(i  1 e 2 0 ]
+"160
+[v _init init `(v  1 e 0 0 ]
+"178
+[v _initTest initTest `(v  1 e 0 0 ]
+"185
+[v _ulozData ulozData `(v  1 e 0 0 ]
+"196
+[v _goPat goPat `(v  1 e 0 0 ]
+"209
+[v _adcSample adcSample `(i  1 e 2 0 ]
+"229
+[v _zobrazLed zobrazLed `(v  1 e 0 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"33 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"42 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"18 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"48
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+"56
+[v ___eetoi __eetoi `(ui  1 e 2 0 ]
+"64
+[v ___eetom __eetom `(um  1 e 3 0 ]
+"72
+[v ___eetol __eetol `(ul  1 e 4 0 ]
+"80
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+"87
+[v ___itoee __itoee `(ui  1 e 2 0 ]
+"94
+[v ___mtoee __mtoee `(um  1 e 3 0 ]
+"101
+[v ___ltoee __ltoee `(ul  1 e 4 0 ]
+"108
+[v ___eetoft __eetoft `(f  1 e 3 0 ]
+"116
+[v ___eetofl __eetofl `(d  1 e 3 0 ]
+"124
+[v ___fttoee __fttoee `(f  1 e 3 0 ]
+"131
+[v ___fltoee __fltoee `(d  1 e 3 0 ]
+"49 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"23 C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h
+[v _set4mhz set4mhz `(v  1 e 0 0 ]
+"32
+[v _set8mhz set8mhz `(v  1 e 0 0 ]
+"45
+[v _set32mhz set32mhz `(v  1 e 0 0 ]
+"60
+[v _delay_ms4 delay_ms4 `(v  1 e 0 0 ]
+"87
+[v _beep beep `(v  1 e 0 0 ]
+"102
+[v _beepBlik beepBlik `(v  1 e 0 0 ]
+"118
+[v _beepBlik3 beepBlik3 `(v  1 e 0 0 ]
+"142
+[v _beep2 beep2 `(v  1 e 0 0 ]
+"158
+[v _blik blik `(v  1 e 0 0 ]
+"198
+[v _uart_init uart_init `(v  1 e 0 0 ]
+"223
+[v _uart_init2400 uart_init2400 `(v  1 e 0 0 ]
+"228
+[v _uart_init9600 uart_init9600 `(v  1 e 0 0 ]
+"237
+[v _uart_init600 uart_init600 `(v  1 e 0 0 ]
+"254
+[v _uart_init300 uart_init300 `(v  1 e 0 0 ]
+"260
+[v _uart_init_fast uart_init_fast `(v  1 e 0 0 ]
+"293
+[v _uart_char uart_char `(v  1 e 0 0 ]
+"308
+[v _uart_read uart_read `(uc  1 e 1 0 ]
+"321
+[v _uart_1numb uart_1numb `(v  1 e 0 0 ]
+"326
+[v _uart_3numb uart_3numb `(v  1 e 0 0 ]
+"336
+[v _uart_4numb uart_4numb `(v  1 e 0 0 ]
+"347
+[v _uart_numb uart_numb `(v  1 e 0 0 ]
+"380
+[v _uart_newline uart_newline `(v  1 e 0 0 ]
+"394
+[v _uart_string uart_string `(v  1 e 0 0 ]
+"416
+[v _uart_dump uart_dump `(v  1 e 0 0 ]
+"442
+[v _uart_stringln uart_stringln `(v  1 e 0 0 ]
+"459
+[v _initAnalog initAnalog `(v  1 e 0 0 ]
+"512
+[v _initAnalog0 initAnalog0 `(v  1 e 0 0 ]
+"555
+[v _initAnalog3 initAnalog3 `(v  1 e 0 0 ]
+"573
+[v _setUref2V setUref2V `(v  1 e 0 0 ]
+"586
+[v _zobraz_4094 zobraz_4094 `(v  1 e 0 0 ]
+"47 C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c
+[v _sGPIO sGPIO `i  1 e 2 0 ]
+"48
+[v _valADc valADc `ui  1 e 2 0 ]
+"49
+[v _valADc16 valADc16 `i  1 e 2 0 ]
+"50
+[v _adr adr `i  1 e 2 0 ]
+"51
+[v _vypnuto vypnuto `i  1 e 2 0 ]
+"52
+[v _val1 val1 `i  1 e 2 0 ]
+"53
+[v _val2 val2 `i  1 e 2 0 ]
+"412 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic12f1840.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"879
+[v _CPSCON0 CPSCON0 `VEuc  1 e 1 @30 ]
+"971
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1367
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+[s S20 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF0 1 0 :1:3 
+`uc 1 IRCF1 1 0 :1:4 
+`uc 1 IRCF2 1 0 :1:5 
+`uc 1 IRCF3 1 0 :1:6 
+`uc 1 SPLLEN 1 0 :1:7 
+]
+"1389
+[s S29 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF 1 0 :4:3 
+]
+[u S33 . 1 `S20 1 . 1 0 `S29 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES33  1 e 1 @153 ]
+"1524
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1543
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S185 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+"1568
+[s S193 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+[s S197 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S200 . 1 `S185 1 . 1 0 `S193 1 . 1 0 `S197 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES200  1 e 1 @157 ]
+"1622
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+[s S157 . 1 `uc 1 ADPREF0 1 0 :1:0 
+`uc 1 ADPREF1 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 ADCS0 1 0 :1:4 
+`uc 1 ADCS1 1 0 :1:5 
+`uc 1 ADCS2 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"1643
+[s S165 . 1 `uc 1 ADPREF 1 0 :2:0 
+`uc 1 . 1 0 :2:2 
+`uc 1 ADCS 1 0 :3:4 
+]
+[u S169 . 1 `S157 1 . 1 0 `S165 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES169  1 e 1 @158 ]
+"1731
+[v _CM1CON0 CM1CON0 `VEuc  1 e 1 @273 ]
+[s S222 . 1 `uc 1 ADFVR0 1 0 :1:0 
+`uc 1 ADFVR1 1 0 :1:1 
+`uc 1 CDAFVR0 1 0 :1:2 
+`uc 1 CDAFVR1 1 0 :1:3 
+`uc 1 TSRNG 1 0 :1:4 
+`uc 1 TSEN 1 0 :1:5 
+`uc 1 FVRRDY 1 0 :1:6 
+`uc 1 FVREN 1 0 :1:7 
+]
+"1918
+[s S231 . 1 `uc 1 ADFVR 1 0 :2:0 
+`uc 1 CDAFVR 1 0 :2:2 
+]
+[u S234 . 1 `S222 1 . 1 0 `S231 1 . 1 0 ]
+[v _FVRCONbits FVRCONbits `VES234  1 e 1 @279 ]
+[s S57 . 1 `uc 1 CCP1SEL 1 0 :1:0 
+`uc 1 P1BSEL 1 0 :1:1 
+`uc 1 TXCKSEL 1 0 :1:2 
+`uc 1 T1GSEL 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 SSSEL 1 0 :1:5 
+`uc 1 SDOSEL 1 0 :1:6 
+`uc 1 RXDTSEL 1 0 :1:7 
+]
+"2225
+[s S66 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SS1SEL 1 0 :1:5 
+`uc 1 SDO1SEL 1 0 :1:6 
+]
+[u S70 . 1 `S57 1 . 1 0 `S66 1 . 1 0 ]
+[v _APFCONbits APFCONbits `VES70  1 e 1 @285 ]
+"2339
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2385
+[v _EEADR EEADR `VEus  1 e 2 @401 ]
+"2440
+[v _EEDATA EEDATA `VEuc  1 e 1 @403 ]
+"2491
+[v _EECON1 EECON1 `VEuc  1 e 1 @405 ]
+"2552
+[v _EECON2 EECON2 `VEuc  1 e 1 @406 ]
+"2604
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"2623
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"2653
+[v _SPBRG SPBRG `VEuc  1 e 1 @411 ]
+"2706
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
+[s S87 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2755
+[u S96 . 1 `S87 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES96  1 e 1 @413 ]
+"2816
+[v _TXSTAbits TXSTAbits `VES96  1 e 1 @414 ]
+"2877
+[v _BAUDCONbits BAUDCONbits `VES96  1 e 1 @415 ]
+"4840
+[v _CARRY CARRY `VEb  1 e 0 @24 ]
+"4964
+[v _FVRRDY FVRRDY `VEb  1 e 0 @2238 ]
+"4968
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"5174
+[v _RCIF RCIF `VEb  1 e 0 @141 ]
+"5176
+[v _RD RD `VEb  1 e 0 @3240 ]
+"5430
+[v _WR WR `VEb  1 e 0 @3241 ]
+"5432
+[v _WREN WREN `VEb  1 e 0 @3242 ]
+"19 C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h
+[v _rem rem `ui  1 e 2 0 ]
+[v _temp_num temp_num `ui  1 e 2 0 ]
+[v _i i `ui  1 e 2 0 ]
+"20
+[v _retnum retnum `[21]uc  1 s 21 retnum ]
+"65 C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c
+[v _main main `(v  1 e 0 0 ]
+{
+"138
+} 0
+"229
+[v _zobrazLed zobrazLed `(v  1 e 0 0 ]
+{
+"231
+[v zobrazLed@pat16 pat16 `i  1 a 2 11 ]
+"229
+[v zobrazLed@pom pom `i  1 p 2 8 ]
+"247
+} 0
+"196
+[v _goPat goPat `(v  1 e 0 0 ]
+{
+"198
+[v goPat@i i `i  1 a 2 6 ]
+"196
+[v goPat@byte8 byte8 `i  1 p 2 0 ]
+"205
+} 0
+"185
+[v _ulozData ulozData `(v  1 e 0 0 ]
+{
+[v ulozData@value value `i  1 p 2 0 ]
+"193
+} 0
+"459 C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h
+[v _initAnalog initAnalog `(v  1 e 0 0 ]
+{
+[v initAnalog@ch ch `i  1 p 2 0 ]
+"509
+} 0
+"160 C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c
+[v _init init `(v  1 e 0 0 ]
+{
+"176
+} 0
+"23 C:\Users\home\MPLABXProjects\1840-c-lion.X\mojeFce1840-02.h
+[v _set4mhz set4mhz `(v  1 e 0 0 ]
+{
+"30
+} 0
+"209 C:\Users\home\MPLABXProjects\1840-c-lion.X\1840-c-lion.c
+[v _adcSample adcSample `(i  1 e 2 0 ]
+{
+"226
+} 0

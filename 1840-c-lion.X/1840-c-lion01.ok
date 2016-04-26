@@ -1,0 +1,278 @@
+/* PROJECT: ad
+ * File:    1840-c-ad
+ * Author:  yenda
+ * Modif:   12.04.2014
+ * Pozn.    adc na 3 Led
+ */
+#include <xc.h>
+#include <pic.h>
+#include <htc.h>
+
+#include <pic12f1840.h>
+#include "config1840.h"
+
+#define _XTAL_FREQ 4000000
+//#include <basic2014.h>
+#include "mojeFce1840-02.h"
+
+// --------------------------------------------------------------------
+//  PIC schema
+//---------------------------------------------------------------------
+//       VDD + -| P |- VSS
+//PIEZO T1 GP5 -| I |- GP0 LED1 / AN0
+//  AN3 T2 GP4 -| C |- GP1 LED2
+//      T3 GP3 -|   |- GP2 / PIEZO
+//---------------------------------------------------------------------
+#define LED1 0
+#define LED2 1
+#define LED3 2
+#define PIEZO 5
+#define T1 3
+#define T2 4
+#define T3 3
+#define AN 4
+
+//4094 (PIN)
+#define STR 0 //1
+#define DAT 1 //2
+#define CLK 2 //3
+
+//---------------------------------------------------------------------
+__EEPROM_DATA(0b00000001,  0b00000010, 0b00000100, 0b00001000,  0b00010000, 0b00100000, 0b01000000,0b10000000);
+__EEPROM_DATA(0b11111111,  0b00000010, 0b00000100, 0b00001000,  0b00010000, 0b00100000, 0b01000000,0b10000000);
+//__EEPROM_DATA(0b000000001, 0b000000010, 0b000000011, 0b00000100, 0b00000101, 0b000000110, 0b000000111, 0b000000111);
+
+int sGPIO;
+unsigned int valADc;
+int valADc16;
+int adr = 16; //za?ínám od 16, ní?e je tabulka __EEPROM_DATA
+
+void init(void);
+void initTest(void);
+int adcSample(void);
+//void zobrazLed(int val);
+void zobrazBar(int val);
+int buttonpressed(int poz);
+void zobraz3Led(int pom);
+//==============================================================================
+//hlavní =======================================================================
+void main (void)
+{
+    init();
+    initTest();
+    //uart_init_fast();
+    //uart_init600();
+    //uart_init2400();
+    //uart_init9600();
+    initAnalog3();
+    //setUref2V();
+
+    while(1)    // LOOP FOREVER
+    {
+        adcSample();
+        ///zobrazLed(valADc);
+        //uart_char('|');
+        //uart_3numb(valADc);
+
+        //int miliV = (8192 /valADc) *1024;
+
+        // Fixed point math only
+        //int vdd_int = 8192 / valADc;
+        //vdd_int *= 2048;//1024
+        //vdd_int /= 8;
+
+        // Floating point
+        //vdd_float = 1024.0 / ref;
+        //vdd_float *= 1.024;
+
+        //uart_char('>');
+        //uart_4numb(valADc/2);
+        //zobrazBar(valADc);
+        zobraz3Led(valADc);
+        __delay_ms(1000);
+        //uart_char(' ');
+
+        //blik(LED2);
+
+        if(buttonpressed(T1)==1)
+      {
+        // if (testbit(PORTA,T1))
+        //setbit(sGPIO,LED1);
+            beep(PIEZO);
+            EEPROM_WRITE(adr, valADc);
+            __delay_ms(100);
+            beep2(PIEZO);
+            __delay_ms(300);
+            adr++;
+            if (adr>255) adr = 16;
+        }
+
+    }
+}
+//==============================================================================
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//this routine is to check button pressings.
+//input: none
+//output: 0 if switch is not pressed. 1 if switch is pressed.
+/////////////////////////////////////////////////////////////////////////////////////////
+int buttonpressed(int poz)
+{
+    //if (GPIObits.GP3==1)        // is button pressed?
+    if (testbit(PORTA,poz))
+    {                            //yes
+       __delay_ms(5);            // wait 5mS for debounce.
+        if (testbit(PORTA,poz))    // is button still has pressed status after 10mS delay?
+        {                        // yes, we have key press
+            return 1;
+        }
+    }
+    return 0;// if key is not pressed, return 0
+}
+
+void init()
+{
+    set4mhz();
+    //set32mhz();
+
+    ADCON0 = 0;                     //adc disabled
+    //;clrf   ANSEL         ; Make all ports as digital I/O
+    ANSELA = 0;                     //all digital
+    CM1CON0 = 0;                    //comparator disabled
+    CPSCON0 = 0;                      //cap sense disabled
+    //CMCON0 = 1<<CM2 | 1<<CM1 | 1<<CM0;
+    PORTA = 0;
+    //TRISA  = 0b011100; // out = 0 (in =1)
+    TRISA = 1<<AN | 1<<T1;
+
+}
+
+void initTest()
+{
+    beep(PIEZO);
+    PORTA = 0b111111;
+    __delay_ms(500);
+    PORTA = 0;
+    __delay_ms(500);
+
+    beep(0);
+    beep(1);
+    beep(2);
+
+    sGPIO = 0;
+    PORTA = sGPIO;
+    //beep();
+
+    //beepUni(PIEZO,100);
+    //beepUni(PIEZO,30);
+}
+
+
+int adcSample()
+{
+     valADc = 0;
+//      ;ADRESH  :ADRESL
+//	;98765432:10 (10 bit result)
+    ADCON0bits.GO = 1;          //start conversion
+    while (ADCON0bits.GO_nDONE)    //wait until done
+        //sGPIO = ADRESH >>4; //copy high nybble of result to leds
+
+        //valADc = (ADRESH *256 + ADRESL)/256; //pro 1840, asi jinak bit?)
+
+        //valADc =(ADRESH<<4);
+        //valADc | = ADRESL;
+        valADc = ADRESH;
+
+
+    //valADc = ADRESH << 8;
+    //valADc |= ADRESL;
+
+}
+
+void zobrazBar(int pom)
+{
+    int pomZ = 0;
+    pomZ = EEPROM_READ(0);
+    //if (pom>32) pomZ = (0b000000001);
+    if (pom>32) pomZ = EEPROM_READ(1);
+    //if (pom>64) pomZ = (0b000000011);
+    if (pom>64) pomZ = EEPROM_READ(2);
+    //if (pom>96) pomZ = (0b000000111);
+     if (pom>96) pomZ = EEPROM_READ(3);
+    //if (pom>128) pomZ = (0b000001111);
+     if (pom>128) pomZ = EEPROM_READ(4);
+    //if (pom>160) pomZ = (0b000011111);
+     if (pom>160) pomZ = EEPROM_READ(5);
+    ///if (pom>192) pomZ = (0b000111111);
+     if (pom>192) pomZ = EEPROM_READ(6);
+
+    if (pom>224) pomZ = EEPROM_READ(7);
+    if (pom>255) pomZ = EEPROM_READ(8);
+
+     zobraz_4094(pomZ, STR,DAT,CLK);
+    //PORTA = pomZ;
+    __delay_ms(100);
+}
+
+void zobrazLed(int pom)
+{
+     /*
+    if (pom>50)
+        sGPIO = bitOn(sGPIO,0);
+    if (pom>100)
+        //sGPIO = bitOn(sGPIO,1);
+        setbit(sGPIO,1);
+    if (pom>200)
+        sGPIO = bitOn(sGPIO,2);
+
+        GPIO = sGPIO;
+     */
+    //zobraz_4094(pom);
+    int pomZ = 0;
+    //if (pom>32) pomZ = (0b000000001);
+    if (pom>32) pomZ = EEPROM_READ(0);
+    //if (pom>64) pomZ = (0b000000011);
+    if (pom>64) pomZ = EEPROM_READ(1);
+    //if (pom>96) pomZ = (0b000000111);
+     if (pom>96) pomZ = EEPROM_READ(2);
+    //if (pom>128) pomZ = (0b000001111);
+     if (pom>128) pomZ = EEPROM_READ(3);
+    //if (pom>160) pomZ = (0b000011111);
+     if (pom>160) pomZ = EEPROM_READ(4);
+    ///if (pom>192) pomZ = (0b000111111);
+     if (pom>192) pomZ = EEPROM_READ(5);
+
+    if (pom>224) {pomZ = (0b001111111);}
+    if (pom>255) {pomZ = (0b011111111);}
+
+   PORTA = pomZ;
+    __delay_ms(100);
+}
+
+
+void zobraz3Led(int pom)
+{
+    PORTA = 0;
+    //if (pom>50)   beepBlik3(LED1,T3,T3);
+    //if (pom>100)  beepBlik3(LED1,LED2,T3);
+    //if (pom>200)  beepBlik3(LED1,LED2,LED3);
+
+
+    int set = 0;
+    if (pom>50)   set = 1;
+    if (pom>100)  set = 2;
+    if (pom>200)  set = 3;
+
+    switch (set)
+    {
+        case 1: beepBlik3(LED1,T3,T3);
+            break;
+        case 2: beepBlik3(LED1,LED2,T3);
+            break;
+        case 3: beepBlik3(LED1,LED2,LED3);
+            break;
+        //default: //
+    }
+
+   
+}
