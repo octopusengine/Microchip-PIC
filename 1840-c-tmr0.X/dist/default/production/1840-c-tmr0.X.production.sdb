@@ -1,0 +1,598 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 12F1840 ]
+[d frameptr 6 ]
+"67 C:\Documents and Settings\Uživatel.ASUS\MPLABXProjects\1840-c-tmr0.X\1840-c-tmr0.c
+[v _init init `(v  1 e 0 0 ]
+"101
+[v _main main `(v  1 e 0 0 ]
+"122
+[v _isr isr `II(v  1 e 0 0 ]
+"141
+[v _kazdouVterinu kazdouVterinu `(v  1 e 0 0 ]
+"174
+[v _kazdouMinutu kazdouMinutu `(v  1 e 0 0 ]
+"189
+[v _buttonpressed buttonpressed `(i  1 e 2 0 ]
+"203
+[v _vypisEEprom vypisEEprom `(v  1 e 0 0 ]
+"275
+[v _ulozData ulozData `(v  1 e 0 0 ]
+"285
+[v _posliData posliData `(v  1 e 0 0 ]
+"308
+[v _initTest initTest `(v  1 e 0 0 ]
+"329
+[v _adcSample adcSample `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.30\sources\common\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.30\sources\common\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"33 C:\Program Files\Microchip\xc8\v1.30\sources\common\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.30\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v1.30\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"42 C:\Program Files\Microchip\xc8\v1.30\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.30\sources\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.30\sources\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 C:\Program Files\Microchip\xc8\v1.30\sources\common\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.30\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+[v i1___awdiv __awdiv `(i  1 e 2 0 ]
+[v i1___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.30\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files\Microchip\xc8\v1.30\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"2 C:\Program Files\Microchip\xc8\v1.30\sources\common\bmul.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"62 C:\Program Files\Microchip\xc8\v1.30\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files\Microchip\xc8\v1.30\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.30\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"51 C:\Program Files\Microchip\xc8\v1.30\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files\Microchip\xc8\v1.30\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"18 C:\Program Files\Microchip\xc8\v1.30\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files\Microchip\xc8\v1.30\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.30\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.30\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 C:\Program Files\Microchip\xc8\v1.30\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.30\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.30\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files\Microchip\xc8\v1.30\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"2 C:\Program Files\Microchip\xc8\v1.30\sources\common\lmul.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.30\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.30\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 C:\Program Files\Microchip\xc8\v1.30\sources\common\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.30\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.30\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files\Microchip\xc8\v1.30\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"2 C:\Program Files\Microchip\xc8\v1.30\sources\common\tmul.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.30\sources\common\wmul.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.30\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"48
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+"56
+[v ___eetoi __eetoi `(ui  1 e 2 0 ]
+"64
+[v ___eetom __eetom `(um  1 e 3 0 ]
+"72
+[v ___eetol __eetol `(ul  1 e 4 0 ]
+"80
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+"87
+[v ___itoee __itoee `(ui  1 e 2 0 ]
+"94
+[v ___mtoee __mtoee `(um  1 e 3 0 ]
+"101
+[v ___ltoee __ltoee `(ul  1 e 4 0 ]
+"108
+[v ___eetoft __eetoft `(f  1 e 3 0 ]
+"116
+[v ___eetofl __eetofl `(d  1 e 3 0 ]
+"124
+[v ___fttoee __fttoee `(f  1 e 3 0 ]
+"131
+[v ___fltoee __fltoee `(d  1 e 3 0 ]
+"49 C:\Program Files\Microchip\xc8\v1.30\sources\pic\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"24 C:\Documents and Settings\Uživatel.ASUS\MPLABXProjects\1840-c-tmr0.X\mojeFce1840-01.h
+[v _set4mhz set4mhz `(v  1 e 0 0 ]
+"34
+[v _set8mhz set8mhz `(v  1 e 0 0 ]
+"44
+[v _set32mhz set32mhz `(v  1 e 0 0 ]
+"65
+[v _delay_ms delay_ms `(v  1 e 0 0 ]
+"92
+[v _beep beep `(v  1 e 0 0 ]
+[v i1_beep beep `(v  1 e 0 0 ]
+[v i1_beep beep `(v  1 e 0 0 ]
+"108
+[v _beep2 beep2 `(v  1 e 0 0 ]
+"124
+[v _blik blik `(v  1 e 0 0 ]
+"164
+[v _uart_init uart_init `(v  1 e 0 0 ]
+"189
+[v _uart_init2400 uart_init2400 `(v  1 e 0 0 ]
+"194
+[v _uart_init9600 uart_init9600 `(v  1 e 0 0 ]
+"205
+[v _uart_init19200 uart_init19200 `(v  1 e 0 0 ]
+"216
+[v _uart_init57600 uart_init57600 `(v  1 e 0 0 ]
+"235
+[v _uart_init600 uart_init600 `(v  1 e 0 0 ]
+"251
+[v _uart_init300 uart_init300 `(v  1 e 0 0 ]
+"257
+[v _uart_init_fast uart_init_fast `(v  1 e 0 0 ]
+"290
+[v _uart_char uart_char `(v  1 e 0 0 ]
+[v i1_uart_char uart_char `(v  1 e 0 0 ]
+[v i1_uart_char uart_char `(v  1 e 0 0 ]
+"305
+[v _uart_read uart_read `(uc  1 e 1 0 ]
+"318
+[v _uart_1numb uart_1numb `(v  1 e 0 0 ]
+[v i1_uart_1numb uart_1numb `(v  1 e 0 0 ]
+[v i1_uart_1numb uart_1numb `(v  1 e 0 0 ]
+"323
+[v _uart_3numb uart_3numb `(v  1 e 0 0 ]
+[v i1_uart_3numb uart_3numb `(v  1 e 0 0 ]
+[v i1_uart_3numb uart_3numb `(v  1 e 0 0 ]
+"333
+[v _uart_4numb uart_4numb `(v  1 e 0 0 ]
+"344
+[v _uart_numb uart_numb `(v  1 e 0 0 ]
+"377
+[v _uart_newline uart_newline `(v  1 e 0 0 ]
+"391
+[v _uart_string uart_string `(v  1 e 0 0 ]
+"413
+[v _uart_dump uart_dump `(v  1 e 0 0 ]
+"439
+[v _uart_stringln uart_stringln `(v  1 e 0 0 ]
+"455
+[v _initAnalog initAnalog `(v  1 e 0 0 ]
+"508
+[v _initAnalog0 initAnalog0 `(v  1 e 0 0 ]
+"556
+[v _initAnalog3 initAnalog3 `(v  1 e 0 0 ]
+"574
+[v _setUref2V setUref2V `(v  1 e 0 0 ]
+"587
+[v _zobraz_4094 zobraz_4094 `(v  1 e 0 0 ]
+"48 C:\Documents and Settings\Uživatel.ASUS\MPLABXProjects\1840-c-tmr0.X\1840-c-tmr0.c
+[v _valADc valADc `i  1 e 2 0 ]
+"49
+[v _valADc16 valADc16 `i  1 e 2 0 ]
+"50
+[v _min1 min1 `i  1 e 2 0 ]
+"51
+[v _max1 max1 `i  1 e 2 0 ]
+"52
+[v _min2 min2 `i  1 e 2 0 ]
+"53
+[v _max2 max2 `i  1 e 2 0 ]
+"54
+[v _adr adr `i  1 e 2 0 ]
+"55
+[v _sec sec `i  1 e 2 0 ]
+[s S285 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"355 C:\Program Files\Microchip\xc8\v1.30\include\pic12f1840.h
+[s S294 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S299 . 1 `S285 1 . 1 0 `S294 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES299  1 e 1 @11 ]
+"409
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"558
+[v _TMR0 TMR0 `VEuc  1 e 1 @21 ]
+"876
+[v _CPSCON0 CPSCON0 `VEuc  1 e 1 @30 ]
+"968
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+[s S253 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1140
+[s S262 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S267 . 1 `S253 1 . 1 0 `S262 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES267  1 e 1 @149 ]
+"1364
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+[s S20 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF0 1 0 :1:3 
+`uc 1 IRCF1 1 0 :1:4 
+`uc 1 IRCF2 1 0 :1:5 
+`uc 1 IRCF3 1 0 :1:6 
+`uc 1 SPLLEN 1 0 :1:7 
+]
+"1386
+[s S29 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF 1 0 :4:3 
+]
+[u S33 . 1 `S20 1 . 1 0 `S29 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES33  1 e 1 @153 ]
+"1521
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1540
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S186 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+"1565
+[s S194 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+[s S198 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S201 . 1 `S186 1 . 1 0 `S194 1 . 1 0 `S198 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES201  1 e 1 @157 ]
+"1619
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+[s S158 . 1 `uc 1 ADPREF0 1 0 :1:0 
+`uc 1 ADPREF1 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 ADCS0 1 0 :1:4 
+`uc 1 ADCS1 1 0 :1:5 
+`uc 1 ADCS2 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"1640
+[s S166 . 1 `uc 1 ADPREF 1 0 :2:0 
+`uc 1 . 1 0 :2:2 
+`uc 1 ADCS 1 0 :3:4 
+]
+[u S170 . 1 `S158 1 . 1 0 `S166 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES170  1 e 1 @158 ]
+"1728
+[v _CM1CON0 CM1CON0 `VEuc  1 e 1 @273 ]
+[s S222 . 1 `uc 1 ADFVR0 1 0 :1:0 
+`uc 1 ADFVR1 1 0 :1:1 
+`uc 1 CDAFVR0 1 0 :1:2 
+`uc 1 CDAFVR1 1 0 :1:3 
+`uc 1 TSRNG 1 0 :1:4 
+`uc 1 TSEN 1 0 :1:5 
+`uc 1 FVRRDY 1 0 :1:6 
+`uc 1 FVREN 1 0 :1:7 
+]
+"1915
+[s S231 . 1 `uc 1 ADFVR 1 0 :2:0 
+`uc 1 CDAFVR 1 0 :2:2 
+]
+[u S234 . 1 `S222 1 . 1 0 `S231 1 . 1 0 ]
+[v _FVRCONbits FVRCONbits `VES234  1 e 1 @279 ]
+[s S57 . 1 `uc 1 CCP1SEL 1 0 :1:0 
+`uc 1 P1BSEL 1 0 :1:1 
+`uc 1 TXCKSEL 1 0 :1:2 
+`uc 1 T1GSEL 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 SSSEL 1 0 :1:5 
+`uc 1 SDOSEL 1 0 :1:6 
+`uc 1 RXDTSEL 1 0 :1:7 
+]
+"2222
+[s S66 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SS1SEL 1 0 :1:5 
+`uc 1 SDO1SEL 1 0 :1:6 
+]
+[u S70 . 1 `S57 1 . 1 0 `S66 1 . 1 0 ]
+[v _APFCONbits APFCONbits `VES70  1 e 1 @285 ]
+"2336
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2382
+[v _EEADR EEADR `VEus  1 e 2 @401 ]
+"2437
+[v _EEDATA EEDATA `VEuc  1 e 1 @403 ]
+"2488
+[v _EECON1 EECON1 `VEuc  1 e 1 @405 ]
+"2549
+[v _EECON2 EECON2 `VEuc  1 e 1 @406 ]
+"2601
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"2620
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"2650
+[v _SPBRG SPBRG `VEuc  1 e 1 @411 ]
+"2703
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
+[s S87 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2752
+[u S96 . 1 `S87 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES96  1 e 1 @413 ]
+"2813
+[v _TXSTAbits TXSTAbits `VES96  1 e 1 @414 ]
+"2874
+[v _BAUDCONbits BAUDCONbits `VES96  1 e 1 @415 ]
+"4837
+[v _CARRY CARRY `VEb  1 e 0 @24 ]
+"4961
+[v _FVRRDY FVRRDY `VEb  1 e 0 @2238 ]
+"4965
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"5171
+[v _RCIF RCIF `VEb  1 e 0 @141 ]
+"5173
+[v _RD RD `VEb  1 e 0 @3240 ]
+"5427
+[v _WR WR `VEb  1 e 0 @3241 ]
+"5429
+[v _WREN WREN `VEb  1 e 0 @3242 ]
+"20 C:\Documents and Settings\Uživatel.ASUS\MPLABXProjects\1840-c-tmr0.X\mojeFce1840-01.h
+[v _rem rem `ui  1 e 2 0 ]
+[v _temp_num temp_num `ui  1 e 2 0 ]
+[v _i i `ui  1 e 2 0 ]
+"21
+[v _retnum retnum `[21]uc  1 s 21 retnum ]
+"101 C:\Documents and Settings\Uživatel.ASUS\MPLABXProjects\1840-c-tmr0.X\1840-c-tmr0.c
+[v _main main `(v  1 e 0 0 ]
+{
+"118
+} 0
+"203
+[v _vypisEEprom vypisEEprom `(v  1 e 0 0 ]
+{
+"221
+[v vypisEEprom@i i `i  1 a 2 24 ]
+"273
+} 0
+"323 C:\Documents and Settings\Uživatel.ASUS\MPLABXProjects\1840-c-tmr0.X\mojeFce1840-01.h
+[v _uart_3numb uart_3numb `(v  1 e 0 0 ]
+{
+"325
+[v uart_3numb@i100 i100 `i  1 a 2 18 ]
+"326
+[v uart_3numb@i10 i10 `i  1 a 2 16 ]
+"327
+[v uart_3numb@i1 i1 `i  1 a 2 14 ]
+"323
+[v uart_3numb@num3 num3 `i  1 p 2 8 ]
+"331
+} 0
+"318
+[v _uart_1numb uart_1numb `(v  1 e 0 0 ]
+{
+[v uart_1numb@num num `i  1 p 2 25 ]
+"321
+} 0
+"290
+[v _uart_char uart_char `(v  1 e 0 0 ]
+{
+[v uart_char@data data `uc  1 a 1 wreg ]
+[v uart_char@data data `uc  1 a 1 wreg ]
+"293
+[v uart_char@data data `uc  1 a 1 24 ]
+"296
+} 0
+"4 C:\Program Files\Microchip\xc8\v1.30\sources\common\wmul.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"6
+[v ___wmul@product product `ui  1 a 2 28 ]
+"4
+[v ___wmul@multiplier multiplier `ui  1 p 2 24 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 26 ]
+"31
+} 0
+"6 C:\Program Files\Microchip\xc8\v1.30\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"6
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"42
+} 0
+"235 C:\Documents and Settings\Uživatel.ASUS\MPLABXProjects\1840-c-tmr0.X\mojeFce1840-01.h
+[v _uart_init600 uart_init600 `(v  1 e 0 0 ]
+{
+"249
+} 0
+"164
+[v _uart_init uart_init `(v  1 e 0 0 ]
+{
+"186
+} 0
+"67 C:\Documents and Settings\Uživatel.ASUS\MPLABXProjects\1840-c-tmr0.X\1840-c-tmr0.c
+[v _init init `(v  1 e 0 0 ]
+{
+"97
+} 0
+"24 C:\Documents and Settings\Uživatel.ASUS\MPLABXProjects\1840-c-tmr0.X\mojeFce1840-01.h
+[v _set4mhz set4mhz `(v  1 e 0 0 ]
+{
+"32
+} 0
+"108
+[v _beep2 beep2 `(v  1 e 0 0 ]
+{
+"110
+[v beep2@p p `i  1 a 2 28 ]
+"108
+[v beep2@co co `i  1 p 2 24 ]
+"121
+} 0
+"92
+[v _beep beep `(v  1 e 0 0 ]
+{
+"94
+[v beep@p p `i  1 a 2 28 ]
+"92
+[v beep@co co `i  1 p 2 24 ]
+"105
+} 0
+"189 C:\Documents and Settings\Uživatel.ASUS\MPLABXProjects\1840-c-tmr0.X\1840-c-tmr0.c
+[v _buttonpressed buttonpressed `(i  1 e 2 0 ]
+{
+[v buttonpressed@poz poz `i  1 p 2 24 ]
+"201
+} 0
+"122
+[v _isr isr `II(v  1 e 0 0 ]
+{
+"124
+[v isr@cnt_t0 cnt_t0 `ui  1 s 2 cnt_t0 ]
+"139
+} 0
+"141
+[v _kazdouVterinu kazdouVterinu `(v  1 e 0 0 ]
+{
+"172
+} 0
+"285
+[v _posliData posliData `(v  1 e 0 0 ]
+{
+[v posliData@ch ch `i  1 p 2 16 ]
+[v posliData@value value `i  1 p 2 18 ]
+"306
+} 0
+"323 C:\Documents and Settings\Uživatel.ASUS\MPLABXProjects\1840-c-tmr0.X\mojeFce1840-01.h
+[v i1_uart_3numb uart_3numb `(v  1 e 0 0 ]
+{
+[v i1uart_3numb@i100 uart_3numb `i  1 a 2 14 ]
+[v i1uart_3numb@i10 uart_3numb `i  1 a 2 12 ]
+[v i1uart_3numb@i1 uart_3numb `i  1 a 2 10 ]
+[v i1uart_3numb@num3 num3 `i  1 p 2 4 ]
+"331
+} 0
+"318
+[v i1_uart_1numb uart_1numb `(v  1 e 0 0 ]
+{
+[v i1uart_1numb@num num `i  1 p 2 1 ]
+"321
+} 0
+"290
+[v i1_uart_char uart_char `(v  1 e 0 0 ]
+{
+[v i1uart_char@data data `uc  1 a 1 wreg ]
+[v i1uart_char@data data `uc  1 a 1 wreg ]
+"293
+[v i1uart_char@data data `uc  1 a 1 0 ]
+"296
+} 0
+"4 C:\Program Files\Microchip\xc8\v1.30\sources\common\wmul.c
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+{
+[v i1___wmul@product __wmul `ui  1 a 2 4 ]
+[v i1___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v i1___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"31
+} 0
+"6 C:\Program Files\Microchip\xc8\v1.30\sources\common\awdiv.c
+[v i1___awdiv __awdiv `(i  1 e 2 0 ]
+{
+[v i1___awdiv@quotient __awdiv `i  1 a 2 2 ]
+[v i1___awdiv@sign __awdiv `uc  1 a 1 1 ]
+[v i1___awdiv@counter __awdiv `uc  1 a 1 0 ]
+[v i1___awdiv@divisor divisor `i  1 p 2 6 ]
+[v i1___awdiv@dividend dividend `i  1 p 2 8 ]
+"42
+} 0
+"174 C:\Documents and Settings\Uživatel.ASUS\MPLABXProjects\1840-c-tmr0.X\1840-c-tmr0.c
+[v _kazdouMinutu kazdouMinutu `(v  1 e 0 0 ]
+{
+"187
+} 0
+"92 C:\Documents and Settings\Uživatel.ASUS\MPLABXProjects\1840-c-tmr0.X\mojeFce1840-01.h
+[v i1_beep beep `(v  1 e 0 0 ]
+{
+[v i1beep@p beep `i  1 a 2 4 ]
+[v i1beep@co co `i  1 p 2 0 ]
+"105
+} 0
+"275 C:\Documents and Settings\Uživatel.ASUS\MPLABXProjects\1840-c-tmr0.X\1840-c-tmr0.c
+[v _ulozData ulozData `(v  1 e 0 0 ]
+{
+[v ulozData@value value `i  1 p 2 0 ]
+"283
+} 0
+"455 C:\Documents and Settings\Uživatel.ASUS\MPLABXProjects\1840-c-tmr0.X\mojeFce1840-01.h
+[v _initAnalog initAnalog `(v  1 e 0 0 ]
+{
+[v initAnalog@ch ch `i  1 p 2 0 ]
+"505
+} 0
+"329 C:\Documents and Settings\Uživatel.ASUS\MPLABXProjects\1840-c-tmr0.X\1840-c-tmr0.c
+[v _adcSample adcSample `(i  1 e 2 0 ]
+{
+"348
+} 0
