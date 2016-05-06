@@ -2,7 +2,7 @@
  * File:   mojeFce1840-02.h
  * Author: yenda
  *
- * Created on 15. duben 2014
+ * Created on 15.4. 2014
  */
 #ifndef MOJEFCE1840_02_H
 #define	MOJEFCE1840_02_H
@@ -336,7 +336,7 @@ void uart_3numb(int num3)
 void uart_4numb(int num4)
 {
     num4  = num4 * 2;
-//tisÌce stovky desÌtky a jednotky
+//tis√≠ce stovky des√≠tky a jednotky
     uart_char(num4/1000 + 48);
     uart_char((num4/100)%10 + 48);
     uart_char((num4/10)%10 + 48);
@@ -565,7 +565,7 @@ void initAnalog3(void)
     //FVRCONbits.ADFVR0 = 1;
     //FVRCONbits.ADFVR1 = 0;
     FVRCONbits.ADFVR = 0b10;
-    while(!FVRRDY); //po?k· na init VREF
+    while(!FVRRDY); //po?k√° na init VREF
     //str. 124
 */
 }
@@ -577,13 +577,13 @@ void setUref2V(void)
     //FVRCONbits.ADFVR0 = 1;
     //FVRCONbits.ADFVR1 = 0;
     FVRCONbits.ADFVR = 0b10;
-    while(!FVRRDY); //po?k· na init VREF
+    while(!FVRRDY); //po?k√° na init VREF
     //str. 124
 }
 
 
 //----------------------
-void zobraz_4094(int byte8, int STR, int DAT, int CLK) //zobrazÌ Byte 1/strobe0 2/data1 3/clock2
+void zobraz_4094(int byte8, int STR, int DAT, int CLK) //zobraz√≠ Byte 1/strobe0 2/data1 3/clock2
 {
     for(int i = 0; i<9; i++)
     {
