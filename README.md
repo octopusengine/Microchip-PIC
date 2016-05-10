@@ -1,5 +1,5 @@
 # Microchip-PIC
-<br>Some of my projects (2011-2015)
+<br>Projects 2011-2015
 <hr>
 <b> 12F1840</b><br>
 1840-c-lion.X<br>
