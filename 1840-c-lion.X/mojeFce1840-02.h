@@ -7,7 +7,6 @@
 #ifndef MOJEFCE1840_02_H
 #define	MOJEFCE1840_02_H
 
-
 #define testbit(var,bit) ((var) & (1<<(bit)))
 #define setbit(var,bit) ((var) |=(1<<(bit))
 #define clrbit(var,bit) ((var) &=~(1<<(bit)))
@@ -233,7 +232,6 @@ void uart_init9600()
     //str 281 >
 }
 
-
 void uart_init600()
 {
     if (_XTAL_FREQ == 4000000)
@@ -456,7 +454,7 @@ void uart_stringln(char *str)
 
 
 //-----------------------------------------------------------------------------
-void initAnalog(int ch)
+void initAnalog(int ch) //chanel
 {
 
     ///setbit(TRISA,ch);
@@ -602,9 +600,6 @@ void zobraz_4094(int byte8, int STR, int DAT, int CLK) //zobrazí Byte 1/strobe0
 }
 
 //==============================================================================
-
-
-
 
 #ifdef	__cplusplus
 }
